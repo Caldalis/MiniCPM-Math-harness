@@ -43,7 +43,7 @@ llama-server -hf Caldalis/MiniCPM5-2B-Math-GGUF:Q8_0 --jinja -ngl 99 -c 98304 -n
 ```
 
 SGLang 和 MLX 的启动方式见 [`scripts/`](scripts/)。使用 LM Studio 时，加载 GGUF 并启动本地服务，再传入
-`--base-url http://127.0.0.1:1234/v1` 即可。b9354 之前的 llama.cpp 不认识 MiniCPM5 的分词器，加载不了这个 GGUF。
+`--base-url http://127.0.0.1:1234/v1` 即可。
 
 **2. 安装 harness：**
 

@@ -43,8 +43,7 @@ llama-server -hf Caldalis/MiniCPM5-2B-Math-GGUF:Q8_0 --jinja -ngl 99 -c 98304 -n
 ```
 
 [`scripts/`](scripts/) also covers SGLang and MLX. In LM Studio, load the GGUF, start the local server and pass
-`--base-url http://127.0.0.1:1234/v1`. Older llama.cpp builds (before b9354) cannot load the GGUF, because they do not
-know the MiniCPM5 tokenizer.
+`--base-url http://127.0.0.1:1234/v1`. 
 
 **2. Install the harness:**
 
