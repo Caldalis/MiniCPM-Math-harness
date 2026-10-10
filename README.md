@@ -9,7 +9,6 @@ built around a 2.5B math model that fits on one GPU or a laptop.
 
 [Model](https://huggingface.co/Caldalis/MiniCPM5-2B-Math) ·
 [GGUF](https://huggingface.co/Caldalis/MiniCPM5-2B-Math-GGUF) ·
-[How it works](docs/how-it-works.md) ·
 [中文](README_zh.md)
 
 </div>

@@ -9,7 +9,6 @@
 
 [模型](https://huggingface.co/Caldalis/MiniCPM5-2B-Math) ·
 [GGUF](https://huggingface.co/Caldalis/MiniCPM5-2B-Math-GGUF) ·
-[工作原理](docs/how-it-works.md) ·
 [English](README.md)
 
 </div>
