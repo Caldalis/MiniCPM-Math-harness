@@ -1,0 +1,5072 @@
+[
+ {
+  "id": "PB-Basic-001",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 8202,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: obtains f(2x)=2f(x)-c from P(0,y) and P(x,0), reduces to additivity so f is linear, correctly solves for a and c, and checks both families in the original equation."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 5203,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly derives f(f(t))=c+2f(t), f(2x)=2f(x)-c and the shifted Cauchy equation, gets f(n)=an+c by induction, solves a(a-2)=0 and c(a-2)=0 correctly, and verifies both solution families."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 6027,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Derives f(2x)=2f(x)-a and f(f(x))=a+2f(x), reduces to Cauchy's equation to get f(n)=cn+a, uses the necessary condition to get c(c-2)=0 and a(c-2)=0, and properly verifies both candidates in the original equation."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 10258,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Via P(x,0) obtains f(2x)+2f(y)=f(2x+2y)+2a and f(2y)=2f(y)-a, deduces f(x+y)=f(x)+f(y)-a so f is affine, correctly solves the coefficient conditions, and verifies both solution families."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 5993,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: derives f(f(y))=c+2f(y) and f(2x)=2f(x)-c, shows f is affine via additivity of f-c, correctly solves the coefficient equations to get a=0,c=0 or a=2 with c arbitrary, and verifies both families."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 7289,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Combines P(0,y) and P(x,0) to get f(2t)=2f(t)-b, deduces f(x+y)=f(x)+f(y)-b so f is linear, correctly solves the coefficient conditions, and verifies f identically 0 and f(n)=2n+b."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 6467,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Derives f(f(y))=c+2f(y) and f(2y)=2f(y)-c, reduces to additivity of g=f-c so f(n)=an+c, correctly solves a(a-2)=0 and c(2-a)=0 from the original equation, and verifies both f=0 and f(n)=2n+c, giving a complete solution."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 6296,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Derives f(2y)=2f(y)-f(0) from P(x+y,0) and x=0, reduces to Cauchy's equation for g=f-f(0) on Z so f is linear, correctly solves the coefficient conditions to get f identically 0 or f(x)=2x+a, and verifies both families."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 7523,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Combines P(x,0) and P(0,x) to get f(2t)=2f(t)-c, reduces to additivity of f-c so f(n)=an+c, correctly solves a(a-2)=0 and c(a-2)=0, and verifies f=0 and f(n)=2n+c, giving a complete solution."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 7021,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly derives f(x+y)=f(x)+f(y)-c so f is affine, reduces the original equation to (2-a)(at+c)=0 for all t which yields exactly a=2 with any c or f=0, and verifies both families."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 11869,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly reduces to f(x+y)=f(x)+f(y)-c so f(n)=an+c, uses f(f(y))=c+2f(y) to force a(a-2)=0 and c(a-2)=0, and then verifies both candidate families in the original equation, so the solution is complete."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 10421,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Compares P(0,y) and P(1,y-1) to show f has constant differences and is therefore linear (the reference approach), correctly solves the coefficient conditions, and verifies both solution families."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 5884,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and correct: obtains f(x+y)=f(x)+f(y)-c so f is affine, correctly solves a^2=2a and ac+c=3c, and verifies f=0 and f(n)=2n+c; one stray miscalculated line is explicitly retracted and redone correctly, so the logic is unaffected."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 7789,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Derives f(2x)=2f(x)-c and f(x+y)=f(x)+f(y)-c, concludes f(n)=an+c, extracts the conditions via s=0 and s=1 to get f identically 0 or f(n)=2n+c, and verifies both."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 10149,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly reduces the equation to f(x+y)=f(x)+f(y)-c, hence f(n)=an+c, solves 2a=a^2 and c(2-a)=0 to get f identically 0 or f(n)=2n+c, and verifies both families."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 7741,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Derives f(f(y))=2f(y)+c and f(2x)=2f(x)-c, reduces to additivity of f-c on Z so f(n)=an+c, correctly obtains a=2 with c arbitrary or a=c=0, and verifies both families in the original equation."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Correctly obtains f(2x)=2f(x)-a from P(x,x) and f(f(t))=a+2f(t), reduces to Cauchy's equation on Z to get f affine, solves c^2=2c and a(c-2)=0 correctly, and verifies both f=0 and f(x)=2x+a.",
+   "status": "accepted",
+   "best": "P5",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 292190,
+   "calls": 47
+  }
+ },
+ {
+  "id": "PB-Basic-002",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 12287,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct and complete: AM-GM gives S>=4sqrt(P)>=P when P<=16, and Cauchy-Schwarz with A>=P/2 gives S>=P^2/16>P when P>16."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 8000,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Rigorous split on S: if S>=8 then Q>=S^2/4>=2S>=P, and if S<=8 then P<=2S<=16 so Q>=4sqrt(P)>=P; both cases are valid and exhaustive."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 4321,
+     "category": "Correct",
+     "score": 7,
+     "reason": "It correctly shows P<=S^2/4 in all cases (via P<=2S when S>=8 and P<=S^4/256<=S^2/4 when S<=8) and combines this with Q>=S^2/4, a complete proof whose omitted one-line algebraic checks are trivial."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 5828,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid proof: Cauchy-Schwarz gives p<=2S<=4sqrt(Q), so Q>=p^2/16>=p when p>=16, and AM-GM gives Q>=4sqrt(p)>=p when p<=16."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 12439,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Case S>=8 uses Q>=S^2/4>=2S>=p with S(S-8)>=0 justified, and case S<8 gives p<16 so AM-GM yields Q>=4sqrt(p)>p; complete, with a correct equality case."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 14229,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid alternative proof: with u=x+y, v=z+t, A=u^2+v^2 it correctly shows min{2(u+v), u^2v^2/16} <= A/2 by contradiction (A<32 vs A>32), so xyzt <= A/2 <= x^2+y^2+z^2+t^2, with every step checked."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 3483,
+     "category": "Correct",
+     "score": 7,
+     "reason": "AM-GM gives Q>=4sqrt(p)>=p when p<=16, and for p>16 the hypothesis with Cauchy-Schwarz gives Q>=(p/2)^2/4=p^2/16>p, so both cases are fully and correctly handled."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 7868,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: AM-GM handles p<=16, and Cauchy-Schwarz with S>=p/2 gives Q>=p^2/16>=p for p>=16, so all cases are covered."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 8325,
+     "category": "Correct",
+     "score": 7,
+     "reason": "AM-GM and Cauchy-Schwarz are derived correctly from elementary identities (including 4Q-S^2 as a sum of squared differences, verified), and the cases p<=16 and p>16 give a complete proof."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 9306,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Splitting on S>=8 (Cauchy-Schwarz gives Q>=S^2/4>=2S>=p) and S<8 (then p<16 and AM-GM gives Q>=4sqrt(p)>=p) is a complete, rigorous proof with a correct equality case."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 13191,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Case P<=16 is handled by AM-GM, and case P>16 forces S>8 so that Q>=S^2/4>2S>=P; this is the reference argument written directly and is complete."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 9873,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete proof: AM-GM gives Q>=4sqrt(P)>=P when P<=16, and Cauchy-Schwarz with S>=P/2 gives Q>=P^2/16>P when P>16; the equality case is also identified correctly."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 13657,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly establishes both Q>=4sqrt(P) (AM-GM) and Q>=P^2/16 (Cauchy-Schwarz plus hypothesis) and notes that one of these bounds is at least P according to whether P<=16 or P>=16, which is a complete proof."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 10954,
+     "category": "Correct",
+     "score": 7,
+     "reason": "AM-GM handles P<=16, and for P>=16 the bound S>=P/2 with Cauchy-Schwarz gives Q>=P^2/16>=P, so the proof is complete and rigorous."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 9975,
+     "category": "Correct",
+     "score": 7,
+     "reason": "A valid alternative: for S>=8, Q>=S^2/4>=2S>=P, and for S<=8, S^2/4-(S/4)^4=S^2(64-S^2)/256>=0 with AM-GM gives Q>=P; all computations check out."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 13634,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete case split: P<=16 handled by AM-GM Q>=4sqrt(P)>=P, and P>16 by Q>=S^2/4>=P^2/16>P using the correctly verified identity 4Q-S^2=sum (x_i-x_j)^2 and S>=P/2."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Correct and complete case split on P<=16 (AM-GM) and P>=16 (Cauchy-Schwarz with S>=P/2 giving Q>=P^2/16>=P), with all inequalities valid.",
+   "status": "accepted",
+   "best": "P5",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 205839,
+   "calls": 48
+  }
+ },
+ {
+  "id": "PB-Basic-003",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 22590,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Case c=f(0) nonzero gives injectivity and f(x)=c-x; case c=0 reduces to af(a+f(b))=(a-b)f(a), giving injectivity for nonzero f and hence f(x)=-x; both families verified, complete."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 22317,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Non-injective case forces f(f(a)) identically 0 and hence f identically 0; injective case uses the unique zero k=f(0) with f(a+f(a))=0 to get f(x)=k-x; both families verified, complete."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 23069,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves injectivity in both cases (from f(p+f(b))=b-p when p!=0, and from P(a0,b) with f(f(a0))=-f(a0)!=0 when p=0 and f is not 0), then f(a+f(a))=0=f(p) gives f(x)=p-x; complete with verification."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 13349,
+     "category": "Correct",
+     "score": 7,
+     "reason": "For t=f(0)!=0, f(t+f(b))=b-t gives injectivity and then f(x)=t-x; for t=0 a nonzero zero forces f=0 and otherwise f(x)=-x; complete with verification."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 14361,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Derives f(f(0))=0 and f(a+f(a))=0, shows f(f(a)) identically 0 forces f identically 0, proves injectivity for nonzero f to get a+f(a)=f(0), and verifies both families; the misprinted intermediate equations (F written for f) are typos that do not affect the valid logic."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 13166,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Splits on c=f(0): c nonzero gives injectivity via f(c+f(b))=b-c and hence f(x)=c-x; c=0 shows a nonzero zero forces f identically 0 and otherwise f(x)=-x; all cases handled and verified."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 9760,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows that any f other than 0 has some a0 with f(f(a0))!=0, gets injectivity from P(a0,b), and combines f(a+f(a))=0=f(f(0)) with injectivity to get f(x)=f(0)-x; complete, rigorous and verified."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 20285,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Case f(0)=p nonzero gives f(p+f(b))=b-p, hence bijectivity and f(x)=p-x; case f(0)=0 uses f(f(a))=-f(a) and surjectivity to get f(x)=-x or f identically 0; all cases covered and verified."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 44127,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Establishes bijectivity and f(f(a)) nonzero for a nonzero, derives f(z+t)=B_t f(z)+C_t, shows B_t=1 so f is affine and then f(x)=K-x, and verifies; the few routine steps left implicit (B_s nonzero, the excluded translation t=-1) follow directly from facts already proved."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 13551,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows two distinct zeros force f(f(a)) identically 0 and then f identically 0, so for nonzero f the only zero is c=f(0) and f(a+f(a))=0 gives f(x)=c-x, with verification of both families."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 19230,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows that two distinct zeros force f(f(a))=0 for all a and then f=0 through a valid image argument, so any other solution has the single zero c=f(0), and a+f(a) in Z gives f(a)=c-a; complete and verified."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 10425,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves injectivity for nonzero f (since f(f(a)) identically 0 would force f identically 0), then f(a+f(a))=0=f(c) yields f(x)=c-x, and verifies both families; complete and rigorous."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 18755,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Uses P(a,c) and P(a,a+f(a)) to get f(a)f(f(a))=af(a); for c!=0 it shows c is the only zero and f(a)=c-a, and for c=0 it avoids the pointwise trap f(a) in {0,-a} by showing a nonzero zero forces f=0, with verification."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 25444,
+     "category": "Correct",
+     "score": 7,
+     "reason": "For p=f(0)!=0 it proves bijectivity from f(p+f(b))=b-p and correctly derives f(t)=p-t, handling t=p and t=2p separately, and for p=0 it shows a nonzero zero forces f=0 and otherwise f(a)=-a; all steps check and the answers are verified."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 21245,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows any zero other than t=f(0) forces f(f(a)) identically 0 and hence f identically 0, so for nonzero f the unique zero t together with f(a+f(a))=0 gives f(x)=t-x, with both families verified."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 21528,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Derives f(f(a))=-f(a+c) and, for every zero x, (c-x)f(a+c)=0, which forces the zero set to be {c} unless f=0, then f(a+f(a))=0 gives f(a)=c-a in both cases c!=0 and c=0, with full verification."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Shows two distinct zeros force f(f(a))=0 for all a and hence f=0, so any other solution has the single zero c=f(0), and f(a+f(a))=0 then gives f(a)=c-a for all a; concise, complete and verified.",
+   "status": "accepted",
+   "best": "P2",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 483254,
+   "calls": 52
+  }
+ },
+ {
+  "id": "PB-Basic-004",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 19306,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Rigorous solution: g(0)=0 from c=21c, g(t)>t with both subcases handled, positivity of the whole bi-infinite orbit, and the eventually alternating sign of A(4/5)^m+B(-1)^m forces B=0, so g(x)=5x, which is verified."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 23602,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete: g(0)=0 by injectivity, g and its inverse preserve sign, closed form of the two-sided orbit, and the odd/even limits of A(4/5)^m+B(-1)^m rule out nonzero B, yielding g(x)=5x, which is verified."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 20443,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows 0 is the only fixed point, derives g(y)-y=20g^{-1}(y) to get sign preservation in both directions, then dominance of the B-term in x_{-m} forces B=0, giving g(x)=5x on both half-lines, with verification."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 27840,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid alternative route: for nonzero x the orbit is strictly monotone over all of Z, so (a_{n+1}-a_n)/5^n=4A-5B(-4/5)^n has constant sign, which forces B=0 because (-4/5)^n is unbounded above and below; g(0)=0 and verification are included."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 25329,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete solution: g(0)=0 by injectivity, positivity of all iterates via g^{-1}, scaling by 4^m shows the alternating term gives a negative limit unless beta=0, so g(x)=5x for both signs, with verification."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 20906,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct and complete chain (g(0)=0, sign-preserving bi-infinite orbit, closed form, sign changes of y_{-m} if B is nonzero, verification); invertibility of g and positivity of backward iterates are left implicit and the unused claim g(t)>t skips the equality case, but these are immediate and do not affect the logic."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 34278,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: g(0)=0, sign-preserving orbit over all integers, closed form A5^n+B(-4)^n, B=0 since A+B(-1)^m(5/4)^m would tend to -infinity for the bad parity, both sign cases treated, and the converse checked."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 12811,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete solution: g(0)=0 by injectivity, closed form with D=(5x-g(x))/9, dominance of the D(-4)^{-m} term forces D=0 for x>0 and x<0, giving g(x)=5x, which is checked to satisfy all conditions."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 25670,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves bijectivity and g(0)=0, shows every orbit keeps the sign of x, solves the two-sided recurrence as C5^n+D(-4)^n, and uses the even/odd limits D and -D of 4^m x_{-m} to force D=0, giving g(x)=5x with verification."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 26224,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Derives g(0)=0, g(t)>t for t>0 and positivity of g^{-1} via g^{-1}(y)=(g(y)-y)/20, then A(4/5)^k+B(-1)^k>0 for all k forces B=0 by parity, giving g(x)=5x on both half-lines, and verifies the answer."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 23683,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete solution: g(0)=0 by injectivity, correct explicit A and B in terms of x and g(x), careful sign argument at large negative indices for both x>0 and x<0 forcing B=0, and verification of g(x)=5x."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 23519,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete argument: g(0)=0 by injectivity, sign-preserving bi-infinite orbits, closed form A5^n+B(-4)^n, and positivity of A4^m+B(-1)^m5^m for all m excludes B>0 and B<0 by choosing m odd or even; both sign cases and verification are included."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 24070,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete solution: proves g(0)=0 by injectivity, builds the bi-infinite orbit satisfying x_{n+2}=x_{n+1}+20x_n, shows the (-4)^n coefficient B=(5x-g(x))/9 must vanish because backward iterates keep the sign of x while the B term dominates, and verifies g(x)=5x."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 28510,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete solution: derives g(0)=0 from c=c+20c, uses that g and g^{-1} preserve sign on the bi-infinite orbit, forces B=0 via A+B(-1)^m(5/4)^m>0 with a correct parity argument, handles x<0 by negation, and verifies g(x)=5x."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 24186,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct: g(0)=0, g and its inverse preserve half-lines, closed form with B=(5x-g(x))/9, and the constant sign of 4^m x_{-m}=A(4/5)^m+B(-1)^m forces B=0 so g(x)=5x, with verification; a leftover scratch line is cosmetic only."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 26464,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete solution: g(0)=0 directly by injectivity, sign-preserving bi-infinite orbit, beta=(5x-g(x))/9 forced to 0 by the dominant 4^{-m} term at negative indices for both x>0 and x<0, and g(x)=5x verified."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Complete solution: g(0)=0 from c=c+20c, iff-type sign preservation giving every orbit term the sign of x, B=0 from A(4/5)^m+B(-1)^m>0 as m grows, both signs handled, and the solution verified.",
+   "status": "accepted",
+   "best": "P6",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 621010,
+   "calls": 58
+  }
+ },
+ {
+  "id": "PB-Basic-005",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    2,
+    7,
+    7,
+    7,
+    7,
+    7,
+    2,
+    7,
+    7
+   ],
+   "mean_score": 6.375,
+   "correct_share": 0.875,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 33114,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves evenness, derives correct coefficient equations, excludes m>=3 via the x^{2m-4} coefficient giving binom(2m,2)=0, obtains c_0=0 or 6 with c_1 free from the displayed constant-term equation, and verifies x^2 and x^4+ax^2+6 explicitly."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 56507,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves evenness (harmless typo P(1/x-1/x)), correctly compares z^(m-2) coefficients in 2*sum a_j B_j(z)=R(z)+R(z-4) to get the impossible 2m(2m-3)=8m(m-1) for m>=3, then solves m=1,2 explicitly (a_0=0, a_0=6) and verifies both families."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 48988,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Follows the reference approach correctly: proves evenness, compares x^(2m-4) coefficients to get binom(2m,2)=0 for m>=3, solves m=1 (alpha=0) and m=2 (beta=6) explicitly, and verifies both families."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 45524,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete: evenness, recurrence-based expansion C_j=S^j-jS^(j-2)+..., E_j leading coefficient -2j(2j-1) rules out m>=3, E_0=2, E_1=0, E_2=-12 give b_0=0 or 6, and both families are explicitly verified."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 45000,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: evenness via surjectivity of x-1/x, correct expansions of S_j and T_j giving D_j leading coefficient 2j(2j-1) to rule out d>=3, correct small cases (D_0=-2, D_1=0, D_2=12 giving b_0=0 or 6), and verification of both families."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 35378,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves evenness, derives exact coefficient equations from the correct binomial identity for (t+2+1/t)^k+(t-2+1/t)^k, uses j=m-2 to force binom(2m,2)=0 for m>=3, solves m=0,1,2 correctly (b_0=0 or 6, b_1 free) and explicitly verifies both families."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 42120,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves evenness, converts the condition into a polynomial identity in s=y+1/y, correctly compares s^{m-2} coefficients (4m(m-1)=-2m, impossible) to exclude m>=3, solves m=0,1,2 correctly and verifies both families."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 32470,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Proves P even and computes the correct leading coefficient of H_k, but invalidly deduces b_0=0 by matching only the k=0 terms and then wrongly extends the degree contradiction to m=2, missing the family x^4+cx^2+6 and giving the wrong answer P=x^2 only."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 27069,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves evenness, reduces to c_0+sum c_k(B_k-D_k)=0 in A=y+1/y with the correct leading term -k(2k-1)A^{k-2} to force m<=2, obtains c_0=0 or c_0=6 with c_1 free, and verifies both families explicitly."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 57227,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves P even via x->1/x, rewrites the condition through Chebyshev polynomials as a polynomial identity whose u^{m-2} coefficients correctly force 2(m-1)=-1 for m>=3, then solves m<=2 to get exactly x^2 and x^4+bx^2+6 and verifies them, with only harmless notational typos (y=e^{2u}, u=cosh 2u; b_m for a_m)."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 37290,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves evenness, reduces to sum b_j(A_j-G_j)=0 with the correct leading coefficient -j(2j-1) to force m<=2, obtains b_0=0 or b_0=6 from A_0-G_0=1, A_1-G_1=0, A_2-G_2=-6, and confirms both families; terse in places but every claim is correct."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 36917,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves evenness, derives correct coefficient relations (1) and (2), shows m>=3 forces q_m binom(2m,2)=0, solves m<=2 correctly with q_0=0 or 6 and q_1 free, and confirms the solutions satisfy the equation."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 36508,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves evenness and uses V_j=2S_j-U_j (S_j evidently t^j+t^{-j}) with the correct leading coefficient -2j(2j-1) to exclude m>=3, solves the small cases correctly and verifies them, with only minor presentation slips (S_j not formally defined, a u/y typo)."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 41838,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Proves P even and correctly computes the y^(j-2) coefficient 2j(2j-1), which validly rules out m>=3, but wrongly applies the argument at m=2 by ignoring the j=0 contribution to the constant term, so it misses x^4+cx^2+6 and gives the wrong final answer P=x^2 only."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 37604,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Expands both sides as Laurent polynomials, correctly excludes n>=5 via the x^{n-4} coefficient, and explicit comparison for degree <=4 gives a_3=a_1=0 and a_0=6a_4, yielding exactly x^2 and x^4+cx^2+6, which are verified."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 43441,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Without needing evenness, derives valid Laurent-coefficient equations, rules out n>=5 via the x^{n-4} coefficient, carefully kills a_1 and a_3 and gets a_0=6 or 0 for each n<=4, and verifies x^2 and x^4+cx^2+6."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Proves P even, reduces to Q(z)+Q(1/z)=(Q(u+2)+Q(u-2))/2, uses the correct leading coefficient -j(2j-1) of D_j=C_j-B_j to force deg Q<=2, solves m=0,1,2 correctly (a_0=0 or a_0=6), and verifies both families x^2 and x^4+cx^2+6.",
+   "status": "accepted",
+   "best": "P7",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 795784,
+   "calls": 68
+  }
+ },
+ {
+  "id": "PB-Basic-006",
+  "single_call": {
+   "scores": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+   ],
+   "mean_score": 0.375,
+   "correct_share": 0.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 116770,
+     "category": "Partial",
+     "score": 1,
+     "reason": "The stated inequality i c_i^2 >= 2(i+1)c_{i-1}c_{i+1} is true (Newton's inequality for P_{i+1}) though barely justified, but the decay is argued only along constant-sign blocks and the general mixed-sign case is never addressed, so the contradiction is not proved."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 68432,
+     "category": "Partial",
+     "score": 1,
+     "reason": "States Newton's inequalities correctly in signed form, but the step to |c_i|^2 > ((i+1)/i)|c_{i-1}||c_{i+1}| is invalid when c_{i-1}c_{i+1}<0, so the otherwise correct log-concavity decay argument does not cover mixed-sign coefficient sequences."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 112360,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Correctly derives the Newton inequality i^2 c_i^2 > (i+1)^2 c_{i-1}c_{i+1} under the contradiction hypothesis and essentially settles the alternating-sign case, but the argument for non-alternating sign patterns is unjustified hand-waving (the inequality says nothing when c_{i-1}c_{i+1}<0), so the general case is not proved."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 98850,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Relies on a nonexistent 'classical Polya theorem' that is false for real coefficients (e.g. all sections of sum q^{k(k+1)/2} x^k with q<1/4 have only distinct real roots) and never uses integrality, so it makes no valid progress."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 119032,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Correctly obtains c_i^2 >= (2(i+1)/i)*c_{i-1}*c_{i+1} from Newton with k=i+1, but then 'takes absolute values' to get |c_i|^2 >= 2|c_{i-1}||c_{i+1}|, which is false when c_{i-1}*c_{i+1} < 0, so the super-exponential decay and contradiction are unfounded."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 126200,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Misstates Newton's inequalities, then from the top-coefficient inequality divides by quantities of unknown sign to get r_k < r_{k-1}/2 and iterates over a merely infinite (non-consecutive) set of k; since c_k*c_{k-2} may be negative the inequality gives nothing, so the decay argument is invalid."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 114404,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Only gestures at Newton's inequalities and makes false claims: that |c_i|^2 > |c_{i-1}||c_{i+1}| holds regardless of signs, and that a strictly log-concave positive integer sequence must terminate (1,2,3,... is a counterexample); no valid argument."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 102134,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Derives the limiting Newton inequality and validly gets a contradiction if c_{i-1}*c_{i+1} > 0 for all large i, but the treatment of sign changes (blocks of bounded length forcing decay to 0) is unjustified and false, since e.g. the pattern ++--++-- with |c_i|=1 satisfies all its constraints; the general case is not proved."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 124399,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The discriminant computation is wrong (factor 4k(k-1) instead of 2k(k-1), then 4k instead of 4k/(k-1)), it asserts the non sequitur c_k*c_{k-2} > 0, and the ratio-decay conclusion is unjustified; no valid argument."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 119709,
+     "category": "Partial",
+     "score": 1,
+     "reason": "States Newton's inequalities correctly but passes to absolute values |c_i|^2 >= ((i+1)/i)|c_{i-1}||c_{i+1}| without justification (false when c_{i-1}c_{i+1}<0), so the decay contradiction is established only for sign-cooperative sequences."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 100539,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Correctly gets c_{k-1}^2 > (2k/(k-1))*c_k*c_{k-2} from the discriminant of P_k^{(k-2)}, but falsely claims u_k/u_{k-1} < 1/2 carries over to absolute values; when c_k*c_{k-2} < 0 nothing follows, so the asserted decay of |c_k| is unjustified and no real progress toward the needed bound on |c_k| is made."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 85223,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Relies on the false claim that a real-rooted polynomial has alternating-sign coefficients (x^2+x-2 is a counterexample) to give the ratios c_i/c_{i-1} a fixed sign; without it the limiting Newton inequality yields no decay, so the proof collapses."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 127397,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Correctly derives c_{k-1}^2 >= (2k/(k-1))*c_k*c_{k-2} via Vieta, but treats only the case c_k*c_{k-2} > 0 and silently assumes it always holds; the inequality is vacuous otherwise (and cannot by itself give a contradiction), so the ratio-decay argument fails and the essential bound on |c_k| via the product of roots is missing."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 69946,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Applies Newton's inequalities correctly, but the claim that Descartes' rule forces the coefficients to alternate in sign is false (it only gives M_k positive and k-M_k negative roots), so the case c_{i-1}c_{i+1}<0, where Newton's inequality is vacuous, is never handled."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 104301,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Derives the limiting Newton inequality i*c_i^2 >= (i+1)*c_{i-1}*c_{i+1} but then iterates the ratio bound only 'where signs are compatible' without justification; when c_{i-1}*c_{i+1} < 0 the inequality is vacuous (e.g. the sign pattern ++--++-- with |c_i|=1 satisfies all of them), so the claimed decay of |c_n/c_0| and the contradiction are unproven and the key idea (bounding |c_n| via the product of roots) is missing."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 109688,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Correctly obtains (k-1)c_{k-1}^2 > 2k c_k c_{k-2} from the discriminant of the (k-2)-th derivative, but then replaces it by |c_{k-1}|^2 > 2|c_k||c_{k-2}|, which is invalid when c_k c_{k-2} < 0, so the decay argument only covers sign-cooperative sequences and the proof has a fatal gap."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Partial",
+   "score": 1,
+   "reason": "Derives the correct limiting Newton inequality i c_i^2 > (i+1)c_{i-1}c_{i+1}, but inequality (2) comes from multiplying inequalities whose sides may be negative and the final decay to 0 is merely asserted without handling sign patterns, so no valid contradiction is reached.",
+   "status": "unverified",
+   "best": "R1.2",
+   "self_grades": [
+    7,
+    3,
+    0
+   ],
+   "tokens": 1476599,
+   "calls": 60
+  }
+ },
+ {
+  "id": "PB-Basic-007",
+  "single_call": {
+   "scores": [
+    7,
+    0,
+    1,
+    0,
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    7,
+    0,
+    0,
+    0
+   ],
+   "mean_score": 1.312,
+   "correct_share": 0.125,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 101726,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and valid: the growth bound gives |a_i|<=3 and a_i!=3 for i<n, distinctness and nonvanishing of a_0..a_{n-1} give n<=5, the (correct) parity recurrence forces n even and rules out n=4, and n=2 is solved exactly via the factorization, with only routine parity case checks left terse."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 83505,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The claim that a chain d_1|d_2|...|d_n with |d_1+...+d_n|<=6 forces n<=2 is false as stated (e.g. alternating +1,-1 differences), so the core step is invalid and only the small cases are handled."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 101749,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Rigorously proves a_0 | 3 and excludes a_0=3 (the case a_n=a_0) and a_0=-3 by a valid mod 9 / mod 3 argument, but the crucial bound n<=2 is only hand-waved."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 96324,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "A self-described sketch: after a_0 | 3, the key claim n<=2 is merely asserted from a recurrence ('can reach a small final value only if n<=2') with no actual proof."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 113998,
+     "category": "Almost",
+     "score": 6,
+     "reason": "The core argument is correct (the maximum of |a_i| over i<n must occur at a_{n-1}, then f(a_{n-1})=3 rules out R>=2, which forces the earlier terms to equal -u and n<=2), but it wrongly concludes |a_i|=1 from R=1 without excluding zero terms and gives an incorrect mod 9 justification for a_0!=3 (a redundant step)."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 105054,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The key step n<=2 is only asserted via an unspecified 'standard divided-difference argument', and even the n=2 case is merely claimed by 'direct check'."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 95725,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The exclusion of n>=3 rests on the false claim that the bracket in b_{n-1}(...)=3-b_0 is divisible by b_0^2 (its last term b_1 is congruent to b_0, not 0, mod b_0^2) followed by hand-waving about 'small exceptional cases', so only the n=1,2 computations are valid."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 98185,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The exclusion of n>=3 rests on false or unjustified claims (a finite sequence being 'eventually periodic', a product-of-derivatives identity forcing f'=+-1 on integer cycles, though the orbit is not even a cycle), so only a_0|3 and the small cases (themselves with slips) remain."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 101990,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The crucial bound n<=2 is only asserted via a vague 'infinite descent' remark with no argument, and the claim a_1 | 3 used for the n=2 case is unjustified, leaving only trivial divisibility facts and small cases, which earn no credit."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 81466,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "After valid divisibility facts, the exclusion of n>=3 is hand-waved (bounded differences do not bound the values for unbounded n, the bound |a_{n-1}|<=6 fails for a_0=3, and 'the leading term cannot be canceled unless n<=2' is unproven), so only the n=2 computation is rigorous."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 99703,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Ruling out a_0=-3 via a_i = a_0 (mod a_0^2) is valid, but excluding a_0=3 uses the false growth claim |b_{i+1}|>=2|b_i| and the bound n<=2 for a_0=+-1 uses an unjustified estimate |b_{i+1}|>=C|b_i|^n, so the main step is missing."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 91302,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The key claim n<=2 is asserted with a vague 'divisibility forces too many small divisors' remark and no actual argument, leaving only a_0|3 and the small cases (with a wrong equation 3a_0^2+a_0=3 in the n=1 case)."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 115178,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows a_0|3, then a valid size estimate (|f(a_i)| >= 3M^n - M(M^n-1)/(M-1) > max(M,3) at an index of maximal |a_i|, which the wording leaves implicit but clearly intends) forces a_0,...,a_{n-1} into {-1,0,1} for n>=2, after which a complete case analysis for a_0=+-1 together with n=1 yields exactly n=2, (a_0,a_1,a_2)=(-1,1,3)."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 101069,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The n=2 case is solved correctly, but the exclusion of n>=3 is pure hand-waving ('comparing leading terms forces |r|<=1', unchecked cases, a bogus 'strictly growing orbit' remark, and the bound |r|<=6 fails when a_0=3), and small-n work earns no credit."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 85383,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Beyond the routine facts a_0|3 and the difference-divisibility chain, the elimination of a_0=3,1,-3 and the exclusion of n>=3 are only asserted (with unfounded 'stabilization/periodic orbit' claims), and even the n=2 case relies on that unproved elimination, so there is no meaningful progress beyond small cases."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 75701,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Apart from a_0|3 and ruling out a_0=-3, the crucial claim n<=2 is justified only by an unspecified 'standard interpolation argument', so what remains is the small cases n=1,2, which earn no credit."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Incorrect",
+   "score": 0,
+   "reason": "Beyond a_0 | 3, the essential step n<=2 is just asserted as 'a standard divisor-chain argument' with no proof, and only the small cases n=1,2 are actually worked out.",
+   "status": "accepted",
+   "best": "R1.1",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 1055460,
+   "calls": 44
+  }
+ },
+ {
+  "id": "PB-Basic-008",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 36290,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete pqr proof: the case p<=sqrt2 uses concavity of sqrt(1+2u)-3sqrt3*u^2 with positive endpoint values, and the case p>=sqrt2 uses Schur and the correct identity 48t-(t^2-2t+9)^2=w(48-40w+8w^2-w^3)>=0 with w=3-t."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 36368,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid pqr/Schur proof: Case p<=sqrt2 via 27u^4<=16(1+u), Case p>=sqrt2 via substitution p=sqrt3 t and the correct factorization (t-1)(3t^3+3t^2+t-3), whose cubic factor is clearly positive for t>3/4."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 37194,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete proof that even proves Schur's inequality via the SOS-type decomposition, then correctly handles t=p^2>=2 (Schur bound plus factorization) and t<=2 (Q<=q^2 and 27v^2<=16(1+v))."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 33334,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete pqr proof: the case p<=sqrt2 uses concavity of 4p-3sqrt3(p^2-1)^2 with positive endpoint values, and the case p>=sqrt2 uses Schur to get Q<=(p^4-2p^2+9)/36 plus convexity of p^4-2p^2-4sqrt3p+9, whose endpoint values are 9-4sqrt6<0 and 0."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 31337,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete pqr proof: the case u=p^2<=2 uses r>=0 and 27w^4<=16(1+w), and the case u>=2 uses Schur and the correct factorization 48u-(u^2-2u+9)^2=(3-u)(u^3-u^2+19u-27)>=0; the only unstated facts (p<=sqrt3, positivity of the cubic on [2,3]) are trivial."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 38118,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete pqr proof: Case p<=sqrt2 bounds Q by (p^2-1)/4 and uses concavity of 4p-3sqrt3(p^2-1), Case p>=sqrt2 uses Schur and the correct factorization (t-3)(t^3-t^2+19t-27)<=0."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 41757,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete proof showing 27M^2<=p^2 in both cases q<=1/2 (via q^4<=q/8) and q>=1/2 (Schur gives M<=(q^2+2)/9 and the verified factorization (1-q)(q^3+q^2+5q-1)>=0)."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 41945,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete pqr proof in R=xy+yz+zx: the case R<=1/2 uses Q<=R^2<=R/2 and 27R^2<=4(1+2R), and the case R>=1/2 uses Schur to get Q<=(R^2+2)/9 plus the correct factorization 3(1+2R)-(R^2+2)^2=(1-R)(R^3+R^2+5R-1)>=0."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 44677,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete pqr argument: for u=p^2<=2 uses Q<=q^2 and 27v^4<=16u, for u>=2 uses Schur to get Q<=(u^2-2u+9)/36 and the verified factorization (u-3)(u^3-u^2+19u-27)<=0; all steps check out."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 42375,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete pqr proof that also proves Schur: the case u<=2 uses 27v^4<=16(1+v), and the case u>=2 uses the correct factorization (u-3)(u^3-u^2+19u-27)<=0; a stray line ('M<=(u-1)/2?') is immediately replaced and does not affect the logic."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 35750,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete pqr proof: with x=sqrt(a) etc. and sum x^2y^2 = q^2-2pr, the case p<=sqrt2 follows from r>=0 and 27q^4<=27q/8<=1+2q, and the case p>=sqrt2 follows from Schur (giving the bound (t^2-2t+9)/36) plus a valid concavity argument showing H(t)=4sqrt(3t)-t^2+2t-9>=0 on [2,3]; all computations check."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 36630,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid pqr proof (x=sqrt a, Q=q^2-2pr, Schur 9r>=p(p^2-2)) with case split at p^2=2: concavity argument for p^2<=2 and the correct factorization (u-3)(u^3-u^2+19u-27) for p^2>=2; a stray self-corrected 'Wait, carefully' line is a presentation blemish that does not affect the logic."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 42820,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete proof: Case p<=sqrt2 via a concave quadratic positive at endpoints, Case p>=sqrt2 via Schur and the correct factorization (w-sqrt3)(w^3+sqrt3w^2+w-3sqrt3) with an increasing, positive second factor."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 33122,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Rigorous pqr/Schur proof with both cases fully verified, including derivation of Q=q^2-2pr and positivity of the cubic factor via C'(t)>0 and C(2)=15."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 22841,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct and complete: the termwise bound sqrt(t)>=(3sqrt3/2)t(1-t) on (0,1) is proved rigorously from AM-GM (t(1-t)^2<=4/27), and summing it with sum a(1-a)=2(ab+bc+ca) gives the result."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 47458,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct pqr proof parametrized by q: Schur gives 9rs>=4q^2-1, leading to Q<=(q^2+2)/9 for q>=1/2 with the verified factorization, and Q<=q^2<=s/(3sqrt3) for q<=1/2."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Correct and complete: proves the homogenized bound 6*sum x^2y^2<=1+Q exactly, as fourth-degree Schur plus 2*sum xy(x-y)^2, then finishes with s^2+1<=4s/sqrt3 for 1<=s<=sqrt3; every identity checks.",
+   "status": "accepted",
+   "best": "P2",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 777084,
+   "calls": 65
+  }
+ },
+ {
+  "id": "PB-Basic-009",
+  "single_call": {
+   "scores": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    7,
+    7,
+    1,
+    6,
+    1,
+    7,
+    7,
+    1
+   ],
+   "mean_score": 2.75,
+   "correct_share": 0.25,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 79865,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Correct answer and construction and a valid reduction A=(136-B)+C, but the key lemma C>=B rests on a false injectivity claim (every bad pair avoiding the three largest elements of U maps to the same triple), so the lower bound is unproven."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 89012,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Correct answer 136 with a verified equality construction, but the lower bound is only a citation of the Manickam-Miklos-Singhi theorem (of which the problem is a direct special case), misstated with the false hypothesis n>=8 (e.g. three 5s and five -3s give 16<21 nonnegative triples), so the key step is unproved."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 60980,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Answer and equality case are correct, but the lower bound is just a citation of the k = 3 Manickam-Miklos-Singhi theorem, which is essentially the problem itself, with no proof, so only the Partial item applies."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 71975,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Correct answer 136 and a correctly verified construction, but the lower bound is only an invocation of the Manickam-Miklos-Singhi theorem, which directly contains the problem, so the key inequality is never proved."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 75696,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Correct answer and correct equality construction (1, -1/17, ..., -1/17), but the lower bound is only asserted by quoting the Manickam-Miklos-Singhi theorem with no proof, which skips the entire substance of the problem."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 78677,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Correct answer 136 and verified construction, but the entire lower bound A>=136 is just an appeal to the Manickam-Miklos-Singhi theorem, of which the problem is a direct special case, so the key step is not proved and only the answer-plus-equality-case Partial item is earned."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 4042,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Wrong answer 408: the argument treats the complement of a triple among 18 numbers as a triple, which is false, and 136 is actually attainable (one 17 and seventeen -1s)."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 77399,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Correct answer and verified construction, but the lower bound A >= 136 is obtained only by citing the Manickam-Miklos-Singhi theorem (essentially a generalization of the problem itself) with no argument, so only the Partial item is earned."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 49985,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous partition double count (every partition into six triples contains a nonnegative triple since the six sums total 0, and each triple lies in exactly N/136 partitions, so A >= 136) together with the verified construction 17, -1, ..., -1 giving exactly 136."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 66493,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete double count over the P partitions into six triples (each has a good triple, each triple lies in R partitions, so A >= P/R = 136, computed correctly) plus a valid construction 153, -1, -2, ..., -17 achieving exactly 136."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 72031,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Correct answer and construction, but the lower bound rests entirely on a quoted 'MMS bound for n >= 6' that is unproved and actually false (e.g. n = 7 with two values -4.5 and five values 2 has only 10 < 15 nonnegative triples), so only the Partial item is earned."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 57161,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Gives a genuine argument whose induction step m-3 -> m (triples through x_m matched to complementary (m-3)-sets, then double counting giving A_0 >= B) is valid and proves the bound along 18 -> 15 -> 12 -> 9 -> 6, with a correct construction, but the lemma is claimed for all m >= 6 (false, e.g. m = 7) because the induction only works for multiples of 3, and the key double count is only sketched."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 86177,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Correct answer 136 and verified construction, but the lower bound is obtained solely by quoting the Manickam-Miklos-Singhi theorem (the problem itself is an instance of it) with no argument, so the essential step is missing."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 72677,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete proof: every partition into six triples contains a nonnegative triple since the six sums total 0, double counting gives A >= P/Q = 18*17*16/36 = 136, and the 17,-1,...,-1 construction attains 136."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 81546,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Self-contained valid lower bound: base case n=6 via complementary triples plus a correct double-counting induction n-3 -> n giving G >= C(n-1,2), which reaches n=18 through 6,9,12,15, and the construction attains 136 (the lemma is overstated for all n but is correctly proved for the multiples of 3 actually needed)."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 71402,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Correct answer 136 and verified construction, but the lower bound is merely a citation of the Manickam-Miklos-Singhi theorem (the problem itself), misstated for all n>=6 where it is false (e.g. n=7 with three 4s and four -3s gives 13<15), so the key step is unproved."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Partial",
+   "score": 1,
+   "reason": "Correct answer and verified equality case, but the whole lower bound is an unproved appeal to the Manickam-Miklos-Singhi theorem, misquoted as valid for n >= 9 (false: three values -6.5 and seven values 3 give 35 < 36 for n = 10), so only the answer-plus-construction Partial item is earned.",
+   "status": "accepted",
+   "best": "P3",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 840954,
+   "calls": 48
+  }
+ },
+ {
+  "id": "PB-Basic-010",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 5840,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows the sum of the two quantities equals sum |a-b| which is congruent mod 2 to 1011(s_A + s_B), i.e. to 1011*2023, odd, so the two quantities cannot be equal; correct and complete despite reusing S_AB, S_BA to denote the sums."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 4333,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows X-Y = 1011(sum B - sum A) and that sum A = sum B is impossible because their total 1011*2023 is odd, so X-Y is nonzero; complete and rigorous."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 19102,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid cut-counting argument with correct counts P_k = x_k(m-k+x_k), Q_k = (k-x_k)(m-x_k) giving D = m*sum(2x_k - k), which is shown to be odd; the phrase that summing P_k 'counts exactly the pairs' should say each pair is counted b-a times and the final box is mislabeled, but the identity used is correct and the proof is complete."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 25314,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Gap-counting gives D = m*sum_k(p_k - q_k), correctly evaluated as m(sum B - sum A), and sum B - sum A = 1011*2023 - 2*sum A is odd, so D is nonzero; complete."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 6841,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows D_+ + D_- = sum of |a-b| over A x B, which is congruent mod 2 to sum(a+b) = 1011^2*2023 (odd), so D_+ = D_- would make the total even, a contradiction; complete and correct."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 20606,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Using +-1 signs and a unit-cut decomposition, correctly derives Delta = 1011*sum_{t=1}^{2021} X_t with X_t congruent to t mod 2, so Delta is odd and nonzero; all computations check out."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 10715,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Observes the difference equals sum over all (a,b) in AxB of (b-a) = 1011(s_B - s_A), and since s_A + s_B = 1011*2023 is odd, s_B - s_A is odd hence nonzero; complete and correct."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 10189,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows X+Y = sum |a-b| is congruent mod 2 to 1+2+...+2022 = 1011*2023, which is odd, so X = Y would force X+Y even, a contradiction; complete and rigorous."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 20897,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct cut-counting derivation (each pair counted once per separating cut) of Delta = m*sum(A_k - B_k) = m(sum_B b - sum_A a), and since the total 1011*2023 is odd the two set sums differ, so Delta is nonzero; complete and rigorous."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 12773,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Cut-by-cut counting correctly yields D = n*sum d_k with d_k = 2alpha_k - k congruent to k mod 2, so sum d_k has the parity of n(2n-1), which is odd, making D odd and nonzero; complete."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 17963,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly rewrites the difference with indicator variables and a unit-cut decomposition as D = 1011*sum_{k=1}^{2021}(2a_k - k), verifies the per-cut count, and shows the sum is odd so D is odd and nonzero; complete and rigorous."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 8075,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly shows the difference equals 1011(T_B - T_A) and that T_B - T_A is odd because T_A + T_B = 1011*2023 is odd, so the difference is nonzero; complete and rigorous."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 6339,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows L-R equals the sum over all of A x B of (b-a) = 1011(sum B - sum A), and since sum A + sum B = 1011*2023 is odd the difference is odd, so L-R is odd and nonzero; complete and rigorous."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 26747,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Gap-counting yields D = n*sum_t y_t with y_t = 2a_t - t congruent to t mod 2, and sum_{t=1}^{2n-1} t has the parity of n = 1011 (odd), so D is odd and nonzero; all steps verified."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 8754,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows X-Y = 1011(sigma_B - sigma_A) and that sigma_A + sigma_B = 1011*2023 is odd, so sigma_A differs from sigma_B and X is not equal to Y; complete and rigorous."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 19536,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Writes Delta = sum_{i<j}(j-i)(eps_i - eps_j), correctly computes the coefficient C_i - D_i = m(2m+1-2i), so Delta is 1011 times a sum of 1011 odd numbers, hence odd and nonzero; all algebra verified."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Cut-counting correctly gives D = m*sum_k(2x_k - k), and sum_k(2x_k - k) has the parity of sum_{k=1}^{2m-1} k = m(2m-1), which is odd, so D is nonzero; complete, with only a harmless reuse of the symbol S_AB for the sum.",
+   "status": "accepted",
+   "best": "P1",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 337683,
+   "calls": 48
+  }
+ },
+ {
+  "id": "PB-Basic-011",
+  "single_call": {
+   "scores": [
+    7,
+    5,
+    0,
+    7,
+    7,
+    7,
+    0,
+    7,
+    6,
+    0,
+    6,
+    7,
+    7,
+    7,
+    7,
+    0
+   ],
+   "mean_score": 5.0,
+   "correct_share": 0.5625,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 57041,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Odd-part chain partition with strictly decreasing 2-exponents along divisibility correctly gives e(1)>=6 via 1|3|...|729 and q*2^k>=96 for all other chains, and the explicit construction q*2^floor(log_3(2000/q)) is shown primitive with minimum 64; only trivial routine checks (the small case table, range <=2000, the pair involving 64) are left implicit."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 104091,
+     "category": "Almost",
+     "score": 5,
+     "reason": "The lower bound is essentially correct (odd numbers above 1000 are forced, and exponents below r along 3u, 9u, ... force k >= 64, with the case check asserted but true), but the construction is only sketched: the rule 'e_t = 6 - Omega(t), replacing values that exceed 2000' is never pinned down and its primitivity, including against the forced odd numbers 1001-1999, is not verified."
+    },
+    {
+     "agent": "A3",
+     "finish": "length",
+     "tokens": 130870,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "no proof submitted"
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 73390,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct chain argument giving a_q >= q*2^h(q) >= 64 (the routine case check is asserted but true) and a valid construction q*2^floor(log_3(2000/q)) whose exponents strictly decrease along odd divisibility, so it is primitive and attains 64."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 59313,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete: chain partition, strict decrease lemma, explicit case analysis (q=3; 5..23; 25..73; q >= 75) proving every a_q > 64 for q >= 3, and a valid construction q*2^(h(q)) attaining 64, with only trivial membership details left implicit."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 92251,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete: the chains r*3^i force L distinct exponents below s, so m_A >= 2^L*r, with a clean case check that this is >= 64, and the explicit construction k_q = min(floor(log_2(2000/q)), 6 - Omega(q)) is correctly shown primitive with minimum 64."
+    },
+    {
+     "agent": "A7",
+     "finish": "length",
+     "tokens": 130870,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "no proof submitted"
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 48261,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: chain partition, k_r > k_s whenever r|s, the bound a_r >= r*2^L with an explicit case check that this is >= 64 (equality only at r=1), and a fully verified construction k_r = max{t: r*3^t <= 1999} attaining 64."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 83969,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Correct chain and power-of-3 argument and valid construction, but the key inequality q*2^(t_q) >= 64 for odd q > 1 is merely asserted (checking the possible ranges of t_q gives...) with no verification shown."
+    },
+    {
+     "agent": "A10",
+     "finish": "length",
+     "tokens": 130870,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "no proof submitted"
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 60046,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Correct approach and valid construction, but the essential numeric step q*2^(r_q) >= 64 for q > 1 is only asserted via a vague either/or hint naming q > 2000/3^(r_q+1), without carrying out the computation or noting r_q <= 5."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 80189,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct lower bound (e_1 >= 6 from 1|3|...|729, and other elements >= 96 by a routine true check) plus a valid construction e_q = min(6 - Omega(q), E_q) whose strict exponent decrease along divisibility is properly verified, giving 64."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 71117,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete: chain partition, strict decrease of 2-exponents along odd divisibility, the power-of-3 chain bound k_q >= a with an explicit correct table showing q*2^a >= 64 for every a, and a verified construction q*2^(a_q) with minimum 64."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 67603,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete: strict exponent decrease along q, 3q, ..., 3^k q gives x_q >= q*2^k, an explicit table shows this is >= 64 with equality only at q=1, and the construction x_q = q*2^k_q is correctly shown primitive with minimum 64."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 59495,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Rigorous chain decomposition and strict-decrease lemma, a clean contradiction argument for the lower bound (q*3^(t+1) < 972 < 2000 forces e(q) >= t+1), and a valid alternative construction e(q)=min(alpha(q), 6-Omega(q)) with antichain property and minimum 64 verified (only the trivial fact Omega(q) <= 6 is left implicit)."
+    },
+    {
+     "agent": "A16",
+     "finish": "length",
+     "tokens": 130870,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "no proof submitted"
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Almost",
+   "score": 6,
+   "reason": "Right approach and valid construction, but the bound q*2^k >= 96 for odd q >= 3 (the lower bound beyond q=1) is stated with no justification, and the key lemma is worded with the implication reversed.",
+   "status": "accepted",
+   "best": "P8",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 1054725,
+   "calls": 69
+  }
+ },
+ {
+  "id": "PB-Basic-012",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    5,
+    6,
+    7,
+    2,
+    0,
+    7,
+    5,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 5.938,
+   "correct_share": 0.6875,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 40366,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct and justified Dyck-word decomposition, verified term simplification, and the sum evaluated via Vandermonde to C(2n,n)C(2n+1,n)/(n+1), yielding the correct 5924217936."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 30086,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Counts of the four move-pair types are derived correctly, the Dyck condition and interleaving give the right sum, and the Vandermonde simplification to (2n+1)C_n^2 yields the correct 5924217936."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 88200,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid bijection from path pairs to nested partitions inside the n x n box via up-step times (the containment notation has a harmless typo), counted correctly by MacMahon's formula for n x n x 2 plane partitions and correctly telescoped to 5924217936."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 46043,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete move-pair counting reduces to Dyck words with interleaved neutral steps, the summand simplification and Vandermonde step are correct, and the closed form (2n+1)/(n+1)^2*C(2n,n)^2 gives the correct 5924217936."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 51359,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid reduction of the condition to a Dyck word on the RU/UR steps with free insertion of n-m RR and n-m UU steps gives the correct sum formula, and every listed term and the total 5924217936 are correct."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 62592,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete Dyck-word decomposition with justified step-type counts, correct term simplification, and the sum evaluated via absorption plus Vandermonde to C(2n,n)C(2n+1,n)/(n+1), giving the correct 5924217936."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 80318,
+     "category": "Almost",
+     "score": 5,
+     "reason": "Right approach and correct answer, but the counting formula is only sketched (the counts of neutral steps and the binomial factors are not justified) and the closed form (2n+1)/(n+1)^2 C(2n,n)^2 is asserted as a 'standard Catalan convolution' without proof."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 75981,
+     "category": "Almost",
+     "score": 6,
+     "reason": "The synchronized step-pair / Dyck-word decomposition correctly yields f(n) = sum_m C_m C(2n,2m) C(2n-2m,n-m), but the closed form C_n C(2n+1,n) is only asserted as a 'standard Catalan convolution' without any proof or simplification (true, but the evaluation step is unjustified), leading to the correct 5924217936."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 52022,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Rigorous bijection between path pairs and step-pair sequences whose +1/-1 part is a Dyck word gives the correct sum formula, and all 11 terms for n=10 are evaluated explicitly and correctly, summing to 5924217936."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 80237,
+     "category": "Partial",
+     "score": 2,
+     "reason": "States the correct formulas and answer, but the main count is only cited as a standard reflection argument or sketched in one vague sentence, and the identity sum = (2n+1)C_n^2 used to get the number is asserted without proof."
+    },
+    {
+     "agent": "A11",
+     "finish": "length",
+     "tokens": 130616,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "no proof submitted"
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 34913,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete Dyck-word decomposition (two count equations are mislabeled as right vs up moves but all are true), with the sum fully evaluated via absorption and Vandermonde to (2n+1)C_n^2 = 5924217936."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 54144,
+     "category": "Almost",
+     "score": 5,
+     "reason": "The derivation of the sum formula is correct and rigorous, but the k=6 term is miscomputed as 1164062800 instead of 1163962800, so the final answer 5924317936 is wrong by 100000."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 58598,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Rigorous move-pair/Dyck-word bijection gives f(n)=sum C_m*C(2n,2m)*C(2n-2m,n-m), correctly simplified via Vandermonde to (2n+1)C_n^2, yielding the correct value 5924217936."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 67519,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct Motzkin/Dyck decomposition with valid level-step placement and UU/RR split, all eleven listed terms and the total 5924217936 check out; the swapped-sign remark about x-differences is an unused typo-level slip that does not affect the argument."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 67333,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Rigorous derivation of f(n)=sum C_m*C(2n,2m)*C(2n-2m,n-m) via the difference walk; the numerical evaluation is not shown but the stated value 5924217936 is correct."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Complete and correct Dyck-word counting with justified counts, reduced explicitly to C(2n,n) sum C(n,m)^2/(m+1) and finished with a standard (true) Vandermonde-type identity to get (2n+1)/(n+1)^2 C(2n,n)^2 = 5924217936.",
+   "status": "accepted",
+   "best": "R1.1",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 895002,
+   "calls": 54
+  }
+ },
+ {
+  "id": "PB-Basic-013",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 14624,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Per-box counting shows the sum of r_c over colors in each box is at most 13, so sum r_c^2 <= 104, while Cauchy-Schwarz gives sum r_c^2 >= 1152/11 > 104, a correct and complete contradiction."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 23190,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Substituting r_x = 2 + d_x gives the exact identity T = 28 + (1/2) sum d_x^2 (verified), and the integer bound d_x^2 >= d_x gives T >= 30 > 28, contradicting the at-most-one-shared-color bound; complete."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 21332,
+     "category": "Correct",
+     "score": 7,
+     "reason": "With r_c = 2 + t_c the identity S = 28 + (1/2) sum t_c^2 is correct, and integrality gives sum t_c^2 >= |sum t_c| = 4, so S >= 30 contradicts the double-counting bound S <= 28."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 17256,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly reduces to every pair of boxes sharing at most one color, double counts to get sum C(r_c,2) <= 28, and uses Cauchy-Schwarz to get sum C(r_c,2) >= 312/11 > 28 (computation verified), a valid contradiction."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 12962,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Double counting gives sum C(r_c,2) <= 28, and the stated identity sum C(r_c,2) = 28 + (1/2) sum d_c^2 (verified) with integers d_c summing to 4 forces the sum above 28; the >= 30 step is terse but immediate, so the proof is complete."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 21319,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct double counting plus the standard (true) fact that integers with fixed sum minimize their sum of squares when as equal as possible (four 3s, eighteen 2s, giving 108), so sum C(r_c,2) >= 30 > 28, a valid contradiction."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 20000,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Rigorous argument: the contradiction hypothesis gives |B_i ∩ B_j| <= 1 so sum C(r_c,2) <= 28, and Cauchy-Schwarz gives sum r_c^2 >= 1152/11, hence sum C(r_c,2) >= 312/11 > 28; computations are correct."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 27103,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Double counting gives T <= 28, and the substitution a_c = 3 - r_c with sum a_c = 18 and a^2 >= a for integers correctly yields T = 21 + (1/2) sum a_c^2 >= 30, a valid contradiction."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 18076,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid double counting gives sum C(r_c,2) = sum |B_i cap B_j| <= 28 under the assumption, and the integer inequality C(r,2) >= 2r-3 (from (r-2)(r-3) >= 0) yields sum >= 2*48-66 = 30, a correct contradiction."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 22533,
+     "category": "Correct",
+     "score": 7,
+     "reason": "With y_c = r_c - 2 (sum 4) and the integer inequality y^2 >= y, it correctly shows sum C(r_c,2) >= 30 > 28 = C(8,2), so some pair of boxes shares two colors; complete and correct."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 14234,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete double-counting proof: under the assumption each box pair shares at most one color so sum C(r_j,2) <= 28, while Cauchy-Schwarz with sum r_j = 48 gives sum C(r_j,2) >= 312/11 > 28, contradiction; all steps check out."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 9481,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly establishes T = sum C(r_c,2) = sum |B_i cap B_j| <= 28 and uses Cauchy-Schwarz to get T >= 312/11 > 28, with all computations verified."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 19738,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Double counting shows N = sum C(r_c,2) <= 28 under the assumption, while Cauchy-Schwarz gives N >= (48^2/22 - 48)/2 = 312/11 > 28, a complete and rigorous contradiction."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 13849,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid proof by contradiction: box pairs share at most one color, so S = sum C(r_x,2) <= 28, while Cauchy-Schwarz yields S >= 312/11 > 28; all steps verified."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 15949,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Counting ordered box pairs gives sum r_c^2 <= 48 + 56 = 104, and with e_c = r_c - 2 the correct identity sum r_c^2 = 104 + sum e_c^2 together with e_c^2 >= e_c gives sum r_c^2 >= 108, a valid contradiction."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 25877,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Uses (r-2)(r-3) >= 0 for integers to get sum r_x^2 >= 108 and hence T >= 30, contradicting the correctly derived double-counting bound T <= 28."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Correct double counting sum C(r_i,2) = sum |B_j ∩ B_k| <= 28 under the assumption, contradicted by the Cauchy-Schwarz bound 312/11 > 28; the argument is complete and the arithmetic is right.",
+   "status": "accepted",
+   "best": "P8",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 506641,
+   "calls": 51
+  }
+ },
+ {
+  "id": "PB-Basic-014",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 21864,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Assuming d_c <= 199, each Googler shares a color with at most 5*198 = 990 others, so the triangle-free no-shared-color graph has minimum degree >= 1033 > 1012 = N/2, contradicting Mantel (whose proof is correctly sketched); complete and rigorous."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 26081,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct contradiction argument: a maximal pairwise disjoint family has union U of at most 10 colors meeting every nonempty set (at least 2023 of them), contradicting the incidence bound 10*199=1990; the self-correcting wording is untidy but the logic is complete."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 14441,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid maximal pairwise-disjoint-family argument: the family has at most 2 sets whose union (at most 10 colors) meets every Googler's color set, so pigeonhole gives a color with at least 203 holders (at least 405 in the one-set case); the unaddressed zero-flag edge case is negligible and does not affect the bound."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 31275,
+     "category": "Correct",
+     "score": 7,
+     "reason": "A maximal pairwise-disjoint family has m <= 2 members, its union of at most 10 colors meets every other Googler, and each such color has at most 198 holders outside the family, giving 2022 <= 1980, a contradiction; essentially the reference proof, complete."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 19678,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct Mantel-based double counting (e(G)>=1,023,132 versus sum C(x_c,2)<=1,001,880 when every x_c<=199) with arithmetic verified; the justification of e(G)<=sum C(x_c,2) is worded in the converse direction, but the inequality is immediate from the definition of G."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 39784,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct: a maximal pairwise disjoint family has at most 2 members, its union U with |U|<=10 meets every color set by maximality, and double counting incidences gives 2024<=10*Delta, so some color has at least 203 holders."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 26415,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct: assuming n_c<=199 gives sum C(n_c,2)<=99*10120=1,001,880, but Mantel on the triangle-free complement gives e(G)>=1,023,132 and every edge is counted in some C(n_c,2), a contradiction."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 30766,
+     "category": "Correct",
+     "score": 7,
+     "reason": "A maximal pairwise-disjoint family of size t <= 2 has a union of at most 10 colors met by all other Googlers, so 2024 - t <= 10*199 = 1990 forces t >= 34, contradicting t <= 2; complete and correct."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 13944,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct: Mantel on the triangle-free complement gives e(G)>=1,023,132, while assuming every color has at most 199 holders bounds each degree by 5*198=990 and hence e(G)<=1,001,880, a contradiction; arithmetic verified."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 17881,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct alternative proof: the complement of the share-a-color graph is triangle-free, so Mantel gives e(G)>=1,023,132, while d_c<=199 for all c would force sum C(d_c,2)<=99*10120=1,001,880, a contradiction; all arithmetic checks out."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 13882,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Mantel's theorem on the triangle-free complement gives e(G) >= 1,023,132 while counting color cliques with a_c <= 199 and sum a_c <= 10,120 gives e(G) <= 1,001,880, a valid contradiction; complete and rigorous."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 18549,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid Mantel-based double count: the complement of the shared-color graph is triangle-free so e(G) >= 2,047,276 - 1,024,144 = 1,023,132, while d_c <= 199 and sum d_c <= 10,120 give e(G) <= 99*10,120 = 1,001,880, a contradiction with all arithmetic verified."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 22695,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct Mantel argument: pairs sharing a color number at least 1,023,132 by triangle-freeness of the complement, yet at most sum C(n_c,2) <= 99*10,120 = 1,001,880 if all n_c <= 199, a valid contradiction with correct arithmetic."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 34914,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete case split: if two people have disjoint color sets, their union of at most 10 colors meets everyone so some color has >= ceil(2024/10) = 203 holders, and otherwise one person's at most 5 colors meet everyone giving >= 405 (a zero-flag holder would only change 2024 to 2023, harmless)."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 32338,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct: treats the empty-set case separately, then uses a maximal pairwise disjoint family of size at most 2 whose union (at most 10 colors) meets every set, so pigeonhole gives a color held by at least 203 Googlers."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 32060,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Builds a set C of at most 10 colors (one person's colors plus those of a disjoint person if one exists) that every Googler's set meets, so sum over C of d_c >= 2024 > 10*199 = 1990, a complete and correct proof."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Correct: splits on whether two Googlers have disjoint color sets; if so every other set meets their union of at most 10 colors (a color with at least 203 holders), otherwise every set meets a fixed set of at most 5 colors (at least 405 holders).",
+   "status": "accepted",
+   "best": "P3",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 660626,
+   "calls": 66
+  }
+ },
+ {
+  "id": "PB-Basic-015",
+  "single_call": {
+   "scores": [
+    3,
+    7,
+    2,
+    7,
+    7,
+    2,
+    1,
+    7,
+    7,
+    2,
+    5,
+    3,
+    7,
+    7,
+    4,
+    1
+   ],
+   "mean_score": 4.5,
+   "correct_share": 0.4375,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 93394,
+     "category": "Partial",
+     "score": 3,
+     "reason": "Termination via the decreasing inversion count and the invariance of compatible (shorter-and-narrower) pairs are correct, but the crucial claim that no inverted pair remains at termination is justified by the invalid argument that 'one could bring them adjacent and swap them', so the core of the sortedness proof is missing."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 37561,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Classifies each pair into four types and shows a move only turns a type-B pair into type C, so type D never appears and the number of B pairs drops; any final adjacent width descent would then be a legal B-type move, giving a complete proof."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 60799,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Termination is correct and it notes that same-direction pairs (shorter and narrower) keep their order, but it argues B=0 at termination circularly, by assuming the width-sorted order is reached and by treating a possibly non-adjacent bad pair as an available swap, so the final order is not proved."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 38961,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Width inversions drop by exactly one per move, and at a stable state an adjacent width descent is either a legal swap or a longer-and-wider pair whose relative order is invariant from the start, giving a complete and rigorous proof."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 73523,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Termination follows since each move swaps a bad pair that can never be swapped again, and at a stable state any adjacent width descent is either a legal move or a shorter-and-narrower pair that can never be reordered, matching the reference argument."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 85113,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Termination via the count N is correct and it notes that same-direction pairs (shorter and narrower) never change order, but it asserts N=0 at termination without proof (having no adjacent legal pair does not rule out non-adjacent counted pairs), so the final order is not proved."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 18276,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Termination via counting width-inverted pairs is correct, but it simply asserts that no bad pairs remain at termination, without using the length condition or any invariant, so the main claim is unproved."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 64365,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves that a car both shorter and narrower than another always stays to its left, proves termination by counting width-inverted pairs still in length order, and gets a valid contradiction from any final adjacent width descent; the only flaw is a letter mix-up in the last sentence that does not affect the logic."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 72677,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Rigorous termination via the bad-pair count, plus a valid induction showing the narrowest car never passes a longer car and must be first in a stable row (its left neighbor would be shorter and wider, allowing a swap), after which the remaining cars form a legal (n-1)-car run."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 87545,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Termination via a strictly decreasing inversion count is correct, but the sortedness part rests on a 'standard adjacent-inversion argument' that is false in general and wrongly treats P=0 as equivalent to width-sortedness, never proving that compatible pairs keep their order."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 88075,
+     "category": "Almost",
+     "score": 5,
+     "reason": "Termination and the key invariant (the narrowest car never passes a longer car) are correct, but it concludes the narrowest car must be first without ever invoking the stopping condition (its left neighbor would be shorter and wider, giving a legal move), and the 'and so on' induction is only sketched."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 80597,
+     "category": "Partial",
+     "score": 3,
+     "reason": "Termination and the invariance of compatible pairs are correct, but the crucial claim that the process cannot stop while a bad pair remains is attributed to a 'standard adjacent-pair argument' that is false for general configurations and needs the invariant, so the main step is unproven."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 34798,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves termination because width inversions drop by exactly one per move, proves that a car both shorter and narrower than another is never swapped with it and so stays to its left, and gets a contradiction from any final adjacent width descent."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 44888,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows every legal swap exchanges two adjacent cars that are incomparable in the both-smaller order, so the row stays a linear extension of that order; this forces any final adjacent width descent to be a legal move, and termination follows from width inversions dropping by one per move."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 98965,
+     "category": "Partial",
+     "score": 4,
+     "reason": "Termination is correct and it shows the narrowest car cannot be passed by longer cars and ends at the front, but the recursive step rests on the false claim that the other cars are still in length order when that car reaches the front (other swaps may happen first), so the proof does not cover every order of swaps."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 96130,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Termination via width inversions is correct, but the final-order step ignores the length condition in the move rule and just asserts that no adjacent width descent can remain, which is the main thing the problem asks to prove."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Proves that shorter-and-narrower pairs never reorder, that each move lowers the width-inversion count by one, and that a terminal adjacent width descent would be a reversed good pair, which is complete and rigorous.",
+   "status": "accepted",
+   "best": "P2",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 900581,
+   "calls": 56
+  }
+ },
+ {
+  "id": "PB-Basic-016",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 32355,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct sign-count invariant with a clean derivation that b=-a and that the pair swaps, and correct computations P=49 initially versus P=52 for the target."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 22174,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct invariant and correct counts (52 initially versus 49 in the target); a garbled sentence and a typo in the swap formula do not affect the valid argument that neighbors must be equal and the incident differences are swapped."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 31378,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct invariant N = #{c_i - c_{i+1} = 1}: legal moves need equal neighbors so the two incident differences are one 1 and one 2 before and after, and the verified counts N = 49 initially versus 52 in the target finish the proof."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 56449,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct invariant: it shows a legal move requires {d_{k-1}, d_k} = {1, 2} and that the move swaps them (immediate, since the reverse move is also legal), and it correctly computes 49 versus 52."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 29810,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid invariant S = sum of the +-1 edge differences with a correct swap computation (the sentence justifying equal neighbors is slightly garbled but the fact is immediate), and correct values S=-3 initially versus S=3 for the target."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 25730,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete proof: shows the neighbors must be equal, uses a+x+y=0 mod 3 to show the two incident differences swap, and correctly counts 49 versus 52 edges with difference 1."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 26706,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Uses the Z_3 edge-difference invariant (number of +1 differences), correctly proves a legal move requires equal neighbors and swaps the two incident differences, and correctly computes 49 initially versus 52 in the target."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 33600,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly proves the multiset of mod-3 edge differences is invariant (the neighbors must coincide and the two incident differences swap) and correctly computes (N1,N2)=(49,52) initially versus (52,49) for the target."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 24380,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct invariant with an explicit proof that a move swaps the two incident differences, and the stated sets of +1 indices (49 initially, 52 finally) check out; only the wording of the equal-neighbors justification is muddled."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 22915,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct invariant (number of +1 values of d_i = x_{i+1} - x_i with W=0, R=1, B=2), a valid proof that each move swaps the two incident differences, and correct counts of 52 initially versus 49 in the target."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 32325,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Uses the mod-3 edge-difference (winding) invariant, correctly shows a legal move needs equal neighbors and merely swaps the two incident differences, and correctly computes N=49 initially versus N=52 for the target."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 39260,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct invariant S = sum of s_i; shows the neighbors must coincide so the two incident edge values sum to 0 before and after a move, and correctly computes S=-3 initially versus S=3 for the target."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 28831,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct invariant and swap argument with correct +1 counts of 49 (initial) and 52 (final); the only flaw is a harmless misstatement of the number of -1 edges, which does not enter the invariant."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 25711,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct +-1 winding-sum invariant with correct values -3 versus 3; it assumes without comment that a repainted stone's two neighbors share a color, but that fact is immediate and the argument is otherwise complete."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 34940,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct invariant (number of edges with difference 1 mod 3) with a valid swap argument, and correctly identifies 49 such edges initially versus 52 for the target."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 55350,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Counts forward edges (R->W, W->B, B->R), rigorously shows a move keeps exactly one forward edge among the two incident edges since neighbors must match, and correctly computes 49 versus 52."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Valid invariant (number of edges with c_i - c_{i+1} = 1 in F_3, with B=0,R=1,W=2), properly justifies that the neighbors must match so the two incident differences are interchanged, and correctly counts 52 versus 49.",
+   "status": "accepted",
+   "best": "P7",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 711985,
+   "calls": 60
+  }
+ },
+ {
+  "id": "PB-Basic-017",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 7769,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Uses x=3^{4m} with x^7=9^{14m}, the correct factorization (x^2+x+1)(x^5-x^4+x^3-x+1), and shows both factors exceed 1 for x>=81, correctly concluding that A_n is never prime."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 6776,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct substitution a=3^{4k} giving A_n=a^7+a^5+1, a valid factorization (a^2+a+1)(a^5-a^4+a^3-a+1) (verified by expansion), and both factors shown to exceed 1 since a>=81, so no n works; complete and rigorous."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 7585,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Substitutes x=3^{4m}>=81, uses the correct (easily checkable) factorization of x^7+x^5+1, and validly shows both factors exceed 1, concluding no n works."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 6999,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Explicitly converts 9^{14m}=3^{28m}, substitutes x=3^{4m}>=81, applies the correct factorization, and rigorously shows both factors exceed 1, so A_n is always composite."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 6675,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct substitution and factorization; the second factor is shown to be a sum of two positive integers x^4(x-1) and x^3-x+1, hence greater than 1, so A_n is never prime."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 12967,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Sets x=3^{4m}>=81, rewrites A_n=x^7+x^5+1, uses the correct factorization and shows both factors are integers greater than 1, correctly concluding there is no such n."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 7196,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Explicitly converts 9^{14m}=3^{28m}=x^7 with x=3^{4m}, applies the correct factorization of x^7+x^5+1, and shows both integer factors exceed 1 for x>=81, giving the correct empty answer with full justification."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 7278,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct substitution x=3^{4m}, correct factorization of x^7+x^5+1, and a valid argument (x^4(x-1)+x^3-x+1 with x>=81) that both factors exceed 1, giving no such n."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 6287,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete reference-style proof: substitution x=3^{4k}, correct factorization (x^2+x+1)(x^5-x^4+x^3-x+1), and valid bounds showing both factors exceed 1 for x>=81."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 7767,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Substitutes x=3^{4k} to get x^7+x^5+1, uses the correct factorization (x^2+x+1)(x^5-x^4+x^3-x+1), and justifies both factors >1 via x>=81 and x^4(x-1)+x^3-x+1>1, concluding correctly that no n exists."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 5147,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct substitution y=3^{4k}, correct factorization, and a valid decomposition y^4(y-1)+y(y^2-1)+1>1 showing both factors exceed 1, so A_n is composite for all n."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 7273,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly derives A_n=x^7+x^5+1 with x=3^{4m} (including 9^{14(n^2+n+1)}=x^7), applies the verified factorization, and proves both factors exceed 1 since x>=81, so A_n is never prime."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 7981,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct substitution and factorization (x^2+x+1)(x^5-x^4+x^3-x+1), with both factors shown >1 for x>1 via the valid rewrite x^4(x-1)+x(x^2-1)+1, so A_n is always composite and no n works."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 10726,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct substitution and factorization, written back in powers of 3, with a verified decomposition 3^{16m}(3^{4m}-1)+3^{4m}(3^{8m}-1)+1>1 showing both factors exceed 1."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 5562,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct substitution x=3^{4m}>=81 and factorization of x^7+x^5+1, with the second factor bounded via the valid identity x^4(x-1)+x(x^2-1)+1>1, giving a complete proof that no n works."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 6528,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Explicitly handles 9^{14m}=3^{28m}=x^7, applies the correct factorization, and shows both factors exceed 1 via x^4(x-1)+x(x^2-1)+1, proving no such n exists."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Substitutes x=3^{4m} to get x^7+x^5+1, uses the correct factorization (x^2+x+1)(x^5-x^4+x^3-x+1), and validly shows both factors exceed 1 via the verified identity (x-1)(x^4+x^2+x)+1, so A_n is never prime.",
+   "status": "accepted",
+   "best": "P4",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 200839,
+   "calls": 49
+  }
+ },
+ {
+  "id": "PB-Basic-018",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    6,
+    7,
+    7,
+    7,
+    7,
+    7,
+    6,
+    7,
+    5,
+    7,
+    7,
+    7,
+    5,
+    7
+   ],
+   "mean_score": 6.625,
+   "correct_share": 0.75,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 24438,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows x>y, derives (y-2k)^2=k(6k+1) with coprime factors, and verifies S=(2a+b)^2; the unstated justification of y-2k>0 follows immediately from y(y-4k)=2k^2+k>0, so the proof is essentially complete."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 44961,
+     "category": "Correct",
+     "score": 7,
+     "reason": "With n=2x+2y+1 and a=2x+1 it correctly derives (a-3n)^2=2n(3n-1), then uses n odd, gcd(n,3n-1)=1 and a prime-exponent argument to conclude n is a perfect square; complete and rigorous."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 39965,
+     "category": "Almost",
+     "score": 6,
+     "reason": "The Pell-equation route is valid (3A^2-2B^2=1, b_n = (-1)^n mod 6 forcing an even index, and the algebra giving 2x+2y+1=a_m^2 all check out), but the classification of all solutions relies on a descent whose positivity and decrease of (5A-4B, 5B-6A) is merely asserted, a minor but genuine gap."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 33373,
+     "category": "Correct",
+     "score": 7,
+     "reason": "It correctly derives 3A^2-2B^2=1 for A=4x+1, B=6y+1, then (A+B)^2=2n(3n-1) with gcd(n,2(3n-1))=1 because n is odd, so n=2x+2y+1 is a square; complete and correct."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 26901,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Substituting x=(n-1)/2-y correctly yields (2y+2n)^2=2n(3n-1), and the proof properly shows gcd(n,2(3n-1))=1, so n=2x+2y+1 is a perfect square; complete and correct."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 27499,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Completing the square in x with s=x+y gives (x-3s-1)^2=(3s+1)(2s+1), and since 3(2s+1)-2(3s+1)=1 the coprime positive factors are both squares, so 2s+1=2x+2y+1 is a square; complete and correct."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 37252,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Writing x=da, y=db with gcd(a,b)=1, it validly derives (3b^2-2a^2)d=a-b, shows D=3b^2-2a^2 divides b^2 and is coprime to b so D=1 (positivity is immediate from Dd=a-b>0), and gets 2x+2y+1=b^2; complete and correct."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 64386,
+     "category": "Correct",
+     "score": 7,
+     "reason": "With A=4x+1, B=6y+1 it correctly derives 3A^2-2B^2=1 and (3A+2B)^2-6(A+B)^2=1, giving (A+B)^2=n*2(3n-1) with n=2x+2y+1 odd and coprime to 2(3n-1), so n is a square; complete and correct."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 17788,
+     "category": "Almost",
+     "score": 6,
+     "reason": "The gcd-scaling argument correctly shows D=3b^2-2a^2 divides a^2 and b^2 and so has no prime factor, but it concludes D=1 without excluding D=-1 (x>y is never shown; this is easily fixed by sign or mod 3), after which g=a-b and 2x+2y+1=b^2 follow correctly."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 32838,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves x>y, derives (x-3d)^2=d(6d+1) with d=x-y and coprime factors, writes d=a^2, 6d+1=b^2, rigorously rules out the minus sign, and verifies 2x+2y+1=(2a+b)^2; complete."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 58890,
+     "category": "Almost",
+     "score": 5,
+     "reason": "The reduction to 3a^2-2b^2=1, the parity argument and the identity 2x+2y+1=a_r^2 are correct, but the key claim that all positive solutions of u^2-6v^2=3 are (3+sqrt6)(5+2sqrt6)^n is asserted without proof, and there are minor slips (wrong intermediate verification line, a_n+b_n*sqrt6 written for 3a_n+b_n*sqrt6)."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 13003,
+     "category": "Correct",
+     "score": 7,
+     "reason": "The quadratic in x with n=x+y has discriminant 4(3n+1)(2n+1), which must be a perfect square, and gcd(3n+1,2n+1)=1 forces 2n+1=2x+2y+1 to be a square; complete and correct."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 35620,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly derives (a-3n)^2=2n(3n-1)=4nm with m=(3n-1)/2, proves gcd(n,m)=1, and concludes n=2x+2y+1 is a perfect square; complete and correct."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 23595,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Substituting s=x+y, t=x-y gives t^2-(10s+4)t+s^2=0, whose discriminant 16(3s+1)(2s+1) must be a perfect square, and since gcd(2s+1,3s+1)=1 with both factors positive, 2s+1=2x+2y+1 is a square; complete and correct."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 49610,
+     "category": "Almost",
+     "score": 5,
+     "reason": "The reduction to (2W)^2-6Z^2=-2, the mod-6 parity argument and the computation 2x+2y+1=(a+2b)^2 are correct, but the key claim that all positive solutions of U^2-6V^2=-2 are (2+sqrt6)(5+2sqrt6)^r is only cited as a 'standard Pell fact' without the needed descent or class argument."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 29249,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Writing x=ga, y=gb with gcd(a,b)=1 and using x>y, it rigorously shows c=3b^2-2a^2 is positive, divides b^2, is a power of 2 and must equal 1, giving g=a-b and 2x+2y+1=b^2; complete and correct."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Setting a=4x+1, b=6y+1 it verifies 3a^2-2b^2=1 and 3a+2b=6n-1, deduces (a+b)^2=2n(3n-1), and correctly shows gcd(n,2(3n-1))=1 so n is a perfect square; all computations check.",
+   "status": "accepted",
+   "best": "P8",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 559270,
+   "calls": 45
+  }
+ },
+ {
+  "id": "PB-Basic-019",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 20778,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Derives A_{2M}=A_M/2 and A_{2M+1}=A_M/2+1/3, proves by induction the exact formula A_N=(1/3)sum b_i 2^{-i} (harmless typo A_1=F(1) for F(1)/3), and bounds it strictly between 0 and 2/3, which is complete."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 17033,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly derives E_{2M}=E_M/2 and E_{2M+1}=1/3+E_M/2, obtains E_N=(1/3)*sum eps_i 2^{-i} by a direct induction on binary digits, and bounds it strictly between 0 and 2/3, completing the proof."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 10636,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly derives E_{2N}=E_N/2 and E_{2K+1}=E_K/2+1/3 from delta(2m)=delta(m) and closes with a valid strong induction from E_0=0 giving |E_N|<5/6, a complete and rigorous alternative to the reference."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 10584,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly derives S_{2N}=S_N/2+N, S_{2N+1}=S_N/2+N+1, hence E_{2N}=E_N/2 and E_{2N+1}=E_N/2+1/3, and a valid strong induction from E_1=1/3 shows -1/6<E_N<5/6, which is complete."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 11458,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid recurrence F(N)=ceil(N/2)+F(floor(N/2))/2 leading to E_{2q}=E_q/2, E_{2q+1}=E_q/2+1/3 with correct algebra and a clean strong induction from E_0=0 yielding |E_N|<5/6, which is complete."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 19834,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Writes delta(n)/n=2^{-v_2(n)}, counts terms via floor(N/2^k), telescopes and evaluates the double sum through the binary digits to obtain the exact identity S_N-2N/3=(eps_0+B)/3 in [0,2/3), with every computation checking out."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 21652,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly derives E_{2q}=E_q/2 and E_{2q+1}=1/3+E_q/2, rigorously identifies E_N=F(N)/3 with F(N)=sum b_j 2^{-j} since both satisfy the same recurrence with value 0 at N=0, and concludes 0<E_N<2/3<1."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 7889,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly derives F_{2M}=F_M/2 and F_{2M+1}=F_M/2+1/3 with F_0=0 and gives a valid strong induction showing |F_N|<1 (indeed at most 5/6) for all N, a complete and rigorous proof."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 18314,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly derives E_{2q}=E_q/2 and E_{2q+1}=E_q/2+1/3 and the exact formula E_N=(1/3)*sum b_i 2^{-i}; the verbal description of the inductive step is slightly loose but the induction is routine and matches the correctly stated recurrence, giving 0<=E_N<2/3<1."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 14214,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly derives S_{2m}=m+S_m/2 and S_{2m+1}=m+1+S_m/2, hence A_{2m}=A_m/2 and A_{2m+1}=A_m/2+1/3, proves by induction the exact formula A_N=(1/3)*sum b_k 2^{-k} over the binary digits of N, and concludes 0<A_N<2/3<1."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 15932,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct recurrences R(2q)=R(q)/2, R(2q+1)=1/3+R(q)/2 and a correct closed form R(N)=(1/3)sum b_i 2^{-i} checked against the recurrence (brief, with a harmless 'leading' vs trailing-digit wording slip), giving 0<=R(N)<2/3, which is complete."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 8932,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct recurrences E_{2M}=E_M/2, E_{2M+1}=E_M/2+1/3 for M>=1 and a valid strong induction from E_1=1/3 proving 0<E_N<5/6 for all N>=1, which is complete."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 17780,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Derives the correct recurrence A(N)=A(floor(N/2))/2+(N mod 2)/3 from delta(2m)=delta(m), unrolls it to the exact binary-digit formula A(N)=(1/3)*sum eps_j 2^{-j} with an adequate inductive justification, and bounds it in [0,2/3), giving a complete proof."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 17117,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correctly derives T_{2M}=T_M/2 and T_{2M+1}=T_M/2+1/3 and proves 0<=T_N<2/3 by a valid strong induction from T_0=0, which is complete and rigorous."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 12646,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct recurrences E(2q)=E(q)/2 and E(2q+1)=1/3+E(q)/2 and a valid strong induction from E(1)=1/3 proving the sharper bound 0<E(N)<2/3, which yields the result."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 16413,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct recurrences T_{2M}=T_M/2, T_{2M+1}=1/3+T_M/2 and the correct closed form T_N=(1/3)sum b_i/2^i (its induction only indicated but entirely routine from the recurrences), giving 0<T_N<2/3, which is complete."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Valid derivation of E_{2m}=E_m/2 and E_{2m+1}=E_m/2+1/3 followed by a correct strong induction from E_1=1/3 showing |E_N|<5/6<1 for all N>=1; complete and rigorous.",
+   "status": "accepted",
+   "best": "P4",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 346748,
+   "calls": 48
+  }
+ },
+ {
+  "id": "PB-Basic-020",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 16282,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: excludes b=2, shows a | b^2-b+1, derives c^2=1 (mod b) with 1<=c<=b-1, rules out c=b-1 because b-1 | b(b-1)+1 forces b=2, and c=1 gives only (7,3), verified."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 26931,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Uses a = +/-1 (mod b): the case a=kb+1 bounds k to give (7,3), and the case a=kb-1 is validly excluded via a | k^3+1, hence a | k^2-k+1, forcing b < k and a size contradiction bc >= 3(k-1)^2 > 2k-1; complete."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 17083,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: excludes b=2, proves a | b^2-b+1, writes b^2-b+1=ac to get a=b+(b+1)c with 1<=c<b, uses a^2=1 (mod b) and a=c (mod b) to force c in {1, b-1}, correctly solves both cases to get only (7,3), and verifies it."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 18362,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and correct alternative argument: writes a=qb+e with e=+-1, derives b | 2q-1 and the valid bound q^2-4q+2<=0, rules out q=1, and checks q=2 (giving (7,3)) and q=3 (giving a=14, not prime), so only (7,3) remains, verified."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 16186,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: excludes b=2, shows a | b^2-b+1, derives k^2=1 (mod b) with 1<=k<=b-1, eliminates k=b-1 with correct algebra (b^3-2b+1=b^2-b+1 is impossible), and k=1 gives only (7,3), which is verified."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 15923,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: excludes b=2, uses parity to get a>=b+2 so a | b^2-b+1, derives c^2=1 (mod b) with 1<=c<=b-1, and correctly solves the cases c=1 and c=b-1 to obtain only (7,3), which is verified."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 17914,
+     "category": "Correct",
+     "score": 7,
+     "reason": "From a^2 = 1 (mod b) it writes a = kb +/- 1, derives b | 2k-1 and bounds k in both sign cases (using b+n <= bn+1 for the minus case), correctly isolating (7,3) and excluding a=14, with verification; complete and rigorous."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 15537,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves a | b^2-b+1 = ac, deduces c^2 = 1 (mod b) with 1 <= c <= b-1 so c in {1, b-1}, and correctly solves both cases (the second giving b(b^2-b-1)=0) to get only the verified pair (7,3); complete."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 15029,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: rules out a | b+1 via b^3=b, gets a | b^2-b+1 and a=(k+1)b+k with k^2=1 (mod b) and 1<=k<=b-1, correctly eliminates k=b-1 by algebra, and k=1 gives only (7,3), which is verified."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 19505,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: excludes b=2, shows a | b^2-b+1 (a=b+1 impossible by parity), derives a=(c+1)b+c with c^2=1 (mod b) and the bound c(c+1)<b, which forces c=1 and hence only (7,3), which is verified."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 21485,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves a | b^2-b+1 = at, obtains t^2 = 1 (mod b) with 1 <= t <= b-1, correctly eliminates t=b-1 and solves t=1 to get b=3, a=7 with verification; complete and rigorous."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 24543,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: rules out a | b+1, writes b^2-b+1=am to get a=(m+1)b+m with m^2=1 (mod b) and 1<=m<=b-1, and correctly treats m=1 and m=b-1 (all primes b, including 2, covered) to get only (7,3), verified."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 25006,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and correct alternative argument: uses parity to write a=2kb+-1, reduces to (b-A)^2=A^2+-(4k-1) with A=k(2k-1), and correctly shows this is a perfect square only for k=1 in the + case, giving only (7,3); the unstated reason that b-A>0 is immediate from b^2>2Ab."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 13790,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Excludes b=2, proves a | b^2-b+1 = ac, and for c >= 2 shows the quadratic in b cannot have a square discriminant since t(S+t) = c^2-1 < S+t, leaving c=1 and the verified pair (7,3); complete."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 17839,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves a | b^2-b+1 = ka, uses a = k (mod b) and a^2 = 1 (mod b) with k < b to get k in {1, b-1}, and correctly solves both cases to obtain only (7,3), verified; complete and rigorous."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 19327,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows a does not divide b+1, so b^2-b+1 = ac, derives b(b-(c^2+c+1)) = c^2-1 and rules out c >= 2 since then b > c^2+c+1 > c^2-1 > 0 yet b | c^2-1, leaving c=1 and the verified pair (7,3); complete."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Rules out b=2, writes a = mb +/- 1, bounds m via (m-1)(m-2) <= 0 and (b-1)(d-1) = m(3-m) respectively, finding only (7,3) and the non-prime a=14; all algebra checks out and the answer is verified.",
+   "status": "accepted",
+   "best": "P5",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 500690,
+   "calls": 52
+  }
+ },
+ {
+  "id": "PB-Basic-021",
+  "single_call": {
+   "scores": [
+    0,
+    0,
+    0,
+    7,
+    0,
+    0,
+    5,
+    0,
+    0,
+    2,
+    0,
+    0,
+    7,
+    0,
+    0,
+    0
+   ],
+   "mean_score": 1.312,
+   "correct_share": 0.125,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 71416,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The essential congruence 2^{2m}+1 = 2m-1 (mod d) is asserted to follow from m | M without proof, and the lemma is false in general (fails for m=473), so the induction is unsupported."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 93205,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The key step 'reducing' a congruence mod 4u to one mod 2(2u-1) is invalid, and the stated lemma is false in general (fails for u=473), so x_n-1 | x_{n+1}-1 is never established."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 99731,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The lemma is a trivial restatement and the inductive step assumes y_n | y_{n+1} only to re-derive the same statement, never proving y_{n+1} | y_{n+2}; the argument is circular."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 79086,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: both base cases P_1 and P_2 are verified, and the lemma correctly derives r | 2^(r+1)+1 from q | 2^q+2 via r+1 = q (mod 2q) and then b | 2^(2b-1)+1 via the order of 2 mod b, giving P_{k-1} implies P_{k+1}."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 87426,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The essential step 2^(r+1)+1 = r (mod 2r), i.e. 2a-1 | 2^(2a)+1, is merely asserted ('one obtains') and the general lemma is false (a = 473 is a counterexample), so the crux x_{n-1}-1 | x_n-1 is never proved."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 79265,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The key congruence q = 1 (mod 2(a_{k-1}-1)), which is equivalent to x_{k-1}-1 | x_k-1, is asserted with a bogus justification (wrongly deriving b | d and invoking a nonexistent stronger hypothesis), and the intermediate claim a_k | 2^(q-1)-1 is false as written, so the crux is unproven."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 101908,
+     "category": "Almost",
+     "score": 5,
+     "reason": "Both key implications are correctly proved (x_{k-1} | x_k with odd quotient gives a_k | a_{k+1}, and a_{n-2} | a_{n-1} with odd quotient gives m_{n-1} | m_n), but the Claim's inductive step merely asserts ('one checks') that x_{k-1} | x_k with odd quotient, which is the statement being proved, instead of deriving it from the previous case, so the induction is circular as written though easily repaired by strong induction."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 79541,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The claim that u | 2^(a-1)+1 gives 2^(sq+1)+1 = s (mod 2s) is unjustified and the stated lemma is false (a = 946 satisfies its hypothesis but not its conclusion), so the key step x_n-1 | x_{n+1}-1 is missing."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 78406,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Relies on a lemma that is false in general (e.g. s=4 gives a=18 not dividing 2^18+2), with a nonsensical proof sketch and no valid use of an induction hypothesis."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 110090,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Sets up the right strengthened induction (a_n | a_{n+1} and r_n = x_n - 1 | r_{n+1}) and validly derives a_{n+1} | a_{n+2} from r_n | r_{n+1}, but the r-part of the step (i.e. x_n - 1 | x_{n+1} - 1) is argued circularly, so the induction never closes."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 80642,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The lemma's key step wrongly infers a congruence modulo 2d from 2^d = -1 (mod p), and the lemma as stated is false (a = 473 is a counterexample), so the essential divisibility x_{n-1}-1 | x_n-1 is never proved."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 82916,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The lemma's key congruence 2^(qd+1)+1 = d (mod 2d) is unjustified (it confuses a congruence mod p^alpha with one mod 2d and never uses the hypothesis), and the lemma is false in general (m = 473 is a counterexample), so x_{n-1}-1 | x_n-1 is never established."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 40751,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Verifies P(2) and P(3) and rigorously proves P(k-2) implies P(k) via x_r = 2 mod 4 (odd quotient), (2^b)^c+1 = 0 mod 2^b+1 with odd quotient, and an order argument mod 2^q+1, giving a complete proof."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 88041,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The crux, that d | 2^(2d-1)+1 implies 2d-1 | 2^(2d)+1 (i.e. x_n - 1 | x_{n+1} - 1), is only asserted as a 'standard congruence' and is false in general (d = 473 is a counterexample), so the stated lemma is false and the key step is never proved."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 84771,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The crucial congruence modulo ord_m(2), which amounts to x_{n-1}-1 | x_n-1 with odd quotient, is simply asserted ('one obtains') without justification, and the induction indices are muddled."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 82281,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The key claim 2^{L+1}+1 = L (mod 2L) is asserted to follow from y_n | 2^L+1 without proof, and that implication is false in general (fails for y=473), so the inductive step is unsupported."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Incorrect",
+   "score": 0,
+   "reason": "The decisive claim q = 1 (mod ord_a(2)) is unjustified, and the lemma as stated is false in general (fails for M=946), so the inductive step is not proved.",
+   "status": "unverified",
+   "best": "P1",
+   "self_grades": [
+    7,
+    0,
+    3
+   ],
+   "tokens": 1054562,
+   "calls": 52
+  }
+ },
+ {
+  "id": "PB-Basic-022",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    0,
+    7,
+    0,
+    0,
+    2,
+    7,
+    7,
+    0,
+    0,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 4.5,
+   "correct_share": 0.625,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 76281,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete proof: taking n=p^t, the logarithmic growth comparison forces |a_d|=1 and d*e_t=2024t (so d|2024 and x=r+eps*p^{mt}), and pigeonhole on signs gives the identity P(r+eps*Y)=Y^d; verification is correct."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 53063,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete proof: x_p-a divides p^2024 so x_p=a+-p^{e_p}, the leading-term comparison forces d*e_p=2024 (so d|2024), pigeonhole on signs gives the polynomial identity P(a+eps*z)=z^d, and the verification of (x+c)^d and -(x+c)^d for odd d is correct."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 75021,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The answer and sufficiency are correct, but necessity relies on Siegel's theorem plus the false claim that genus 0 for Y^2024 = P(X) forces P to be a d-th power of a linear polynomial (Y^N = X(X-1)^(N-1) has genus 0), and |eps| = 1 is simply asserted."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 53631,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows x_p - r = +-p^(e_p), uses pigeonhole to fix one sign and exponent over infinitely many primes, gets 2024 = de by comparing growth, and concludes P(x) = (eps(x-r))^d from a polynomial with infinitely many roots; complete, with verification."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 90866,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Necessity rests on an unjustified appeal to Siegel's theorem (the polynomial parametrization, every n on one component, B linear, and alpha=+-1 from integrality are all asserted without valid justification), so only the easy verification is valid and no guideline partial item such as the integer-root analysis is reached."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 82440,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The answer and sufficiency are correct, but necessity rests on an unproved 'algebraic Polya theorem' applied to a single branch assumed to give x_a for all large a (unjustified for even deg P, which has two real branches) plus unsupported claims such as A/e = +-1, so there is no valid necessity argument and none of the guideline progress."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 97168,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Finds the integer root r and correctly shows x_p - r = +-p^(2024/d) with d | 2024, but it assumes a positive leading coefficient without justification and wrongly writes p^N = t_p^d when t_p = -p^k with d odd, so the final answer leaves out the valid solutions -(x-r)^d for odd d (e.g. P(x) = -x)."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 49452,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct reference-style argument: x_p-r=+-p^{a_p} and p not dividing R(x_p) force a_p*m=N and R(x_p)=+-1, pigeonhole makes R constant +-1, and the divisibility/sign conditions and verification are correct (only a harmless typo N=am_p)."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 50049,
+     "category": "Correct",
+     "score": 7,
+     "reason": "After shifting so Q(0)=0 and writing Q = x^k U, 2-adic valuations give k | 2024 and growth gives deg Q = k, so Q = Ax^k, and a prime q not dividing A forces A = +-1, with A = -1 only for odd k; complete, with verification."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 101868,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Necessity relies on a hand-waved Siegel argument whose key claim that the parametrizing function S must be linear is unjustified (and the steps giving lambda in Z and |lambda|=1 are garbled); there is no integer-root analysis, so only the verification is valid."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 94308,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The answer and sufficiency are correct, but necessity is hand-waved through Siegel's theorem: the polynomial parametrization, the argument that S must be linear, and A = +-1 are all unjustified or invalid."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 51124,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Follows the reference: with Q=y^L U, U(0)=b and p not dividing b, the congruence U(y_N) = b mod p forces U(y_N)=+-1 infinitely often so U is constant +-1, and then L|2024, the sign condition and the verification are all derived correctly."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 93625,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete proof: divisibility plus the growth estimate |x_p| ~ p^{m/d} force x_p-alpha=+-p^{m/d} and d|2024, then R(y)=P(alpha+y)/y agrees with +-y^{d-1} at infinitely many points, giving P=+-(x-alpha)^d with correct sign handling and verification."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 52264,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete proof: factoring P=(x-r)^m R and pigeonholing x_p=r+eps*p^e, the growth comparison gives ed=2024 and leading coefficient +-1, the congruence R(r+eps*p^e) = R(r) mod p^e shows R is constant, and the signs and verification are handled correctly."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 62807,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows x_p - a = +-p^(r_p), uses asymptotics to force r_p d = 2024, removes the lower-order part with a polynomial having infinitely many roots, and uses P(a+-1) = 1 to get leading coefficient +-1; the only omissions (e.g. stating c*eps^d = 1 before L(eps p^r) = 0) follow at once from its displayed equations."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 53246,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Follows the reference approach, using root multiplicity r and the p-adic valuation to get r | 2024 and eps_p^r Q(a + eps_p p^(2024/r)) = 1, hence Q = +-1 with the minus sign only for odd r; correct and complete, with verification (it leaves implicit the trivial fact that d_p = +-1 is impossible for large p)."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Complete proof: P(a)=0 and P(a+-1)=1 normalize to Q(0)=0, Q(1)=1, divisibility gives y_p=+-p^{e_p}, the leading-term growth comparison forces d*e_p=2024, and pigeonhole on signs yields the identity Q(Y)=Y^d; verification is correct.",
+   "status": "accepted",
+   "best": "P8",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 1091581,
+   "calls": 72
+  }
+ },
+ {
+  "id": "PB-Basic-023",
+  "single_call": {
+   "scores": [
+    1,
+    2,
+    2,
+    2,
+    7,
+    1,
+    3,
+    2,
+    2,
+    2,
+    6,
+    3,
+    7,
+    6,
+    2,
+    6
+   ],
+   "mean_score": 3.375,
+   "correct_share": 0.125,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 96421,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Finds both answers and handles b odd, but the whole even-b case, including b=2 (mod 4), rests on a vague unproven '7-adic lemma' and an arbitrary candidate list, so there is no rigorous progress there."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 94894,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Finds both answers and rigorously handles b odd and b=2m with m odd, but the case m even (4|b) is dismissed with an unexplained 'infinite descent', so the main difficulty is missing."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 112486,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Handles b odd and b = 2 mod 4 rigorously, but the 4|b case reduces to a lemma whose proof is invalid: it has an algebra error and claims without justification that the 2-adic valuation is exactly 2n."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 95814,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Finds both solutions and handles b odd and, with some hand-waving, b = 2 mod 4, but the 4|b (k even) case is only asserted through a vague, garbled 'contradiction' with no actual argument."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 80065,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: handles b odd, v_2(b)=1 via the factor pairs of 15, and 4|b by showing a even contradicts 2^c-1<=8b-1<7^(b/2) while a odd contradicts congruences mod 9 and mod 13; all computations check out."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 86739,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Finds both answers and correctly handles c=1 (equivalently b odd), but the c>=4 case relies on an unproven 'standard 7-adic' claim that x=2y, so even b=2 (mod 4) is not handled."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 87339,
+     "category": "Partial",
+     "score": 3,
+     "reason": "Finds both solutions, handles b odd and b = 2 mod 4, and gives a valid size argument for 4|b once c is even, but the crucial claim that l is odd (c even) is only asserted ('modulo 9 and 13 a contradiction arises') with no proof."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 105306,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Finds both solutions and handles b odd and b = 2 mod 4 (up to an exponent typo, a in place of a-c), but the 4|b case is dismissed by an invalid primitive-divisor / infinite-descent argument."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 97115,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Finds both solutions and handles b odd and b = 2 mod 4 correctly, but the 4|b case rests on a false 'negative Pell / infinite descent' claim (e.g. 2^7 - 11^2 = 7 gives odd L < A), so that case is not proved."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 84417,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Finds both answers and correctly handles b odd and v_2(b)=1, but the hard case 4|b is dismissed with a vague, unjustified appeal to Zsigmondy and infinite descent."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 92516,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Right approach with complete structure (mod 9 and mod 13 force c even, then a size bound gives b=2), but it states a false mod-49 conclusion c=4,10,16 (mod 21) (only the true consequence c=1 mod 3 is actually used) and leaves steps such as a=0 (mod 3) unstated, a minor flaw."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 87695,
+     "category": "Partial",
+     "score": 3,
+     "reason": "Handles b odd and b = 2 mod 4 correctly and gives a valid size argument for 4|b once c is even, but the key claim c = 10 mod 12 (hence c even) is asserted with no derivation."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 70516,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and rigorous: b odd gives (3,1,1); for b even LTE gives c=3+v_2(b), congruences mod 3, 7, 9 and 13 rule out c odd, and with a, c even the factorization (2^m-7^k)(2^m+7^k)=2^c-1 together with 2^c<=16k forces k=1 and (6,2,4); the only flaw is a harmless non-sequitur in justifying a>=3."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 116319,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Essentially complete (LTE, a mod 13 argument ruling out odd v_2(k), then a size bound), but it wrongly says 1*15 is the only same-parity factorization of 15, skipping the trivially impossible 3*5 case, and its mod-13 residue list is slightly wrong, though the conclusion still holds."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 87147,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Correctly handles b odd and b=2 (mod 4) via the 2u*8v factorization and factor pairs of 15, but the case 4|b (k even) is waved away with an invalid 'standard descent' claim."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 112139,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Correct structure (LTE for c, mod-13 parity argument, then the size bound 2*7^(b/2)<2^c<=8b) yielding both answers, but the crucial mod-13 step is only asserted ('one checks') and uses the unjustified claim b=4 or 8 (mod 12), omitting the case 3|b (which also fails), a minor gap."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Complete and rigorous: the mod 3 and mod 7 congruences and LTE give c = 3 + v_2(b), a correct mod 9 / mod 13 computation shows a is even when b is even, and a factorization plus the bound 7^{b/2} < 2^c <= 8b forces b = 2, with both solutions verified.",
+   "status": "accepted",
+   "best": "P4",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 1017479,
+   "calls": 48
+  }
+ },
+ {
+  "id": "PB-Basic-024",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 26856,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete: writing 20^a = (3^a)^2 (mod 11), x^2+y^2 = 0 (mod 11) with x nonzero forces either -1 to be a square mod 11 or x = 0, both impossible, so c>=1 is excluded, and c=0 gives a=b=0."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 10340,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Handles c=0 to get (0,0,0), and for c>=1 shows -20^a is a non-residue mod 11 (since 20 = 3^2 and negatives of residues are non-residues) while b^4 is a square, a complete proof."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 9336,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Explicit (correct) tables of fourth powers and powers of 9 mod 11 show -9^a is never a fourth-power residue, excluding c>=1, and the c=0 case correctly yields only (0,0,0)."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 13818,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete mod-11 argument: 20 = 9 = 3^2 (mod 11) makes 20^a a nonzero quadratic residue, so b^4 = -20^a would make -20^a a residue although -1 is a non-residue for 11 = 3 (mod 4), ruling out c>=1, and c=0 correctly forces a=b=0."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 14141,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete: 20 = 3^2 (mod 11) makes -20^a a nonzero non-residue because -1 is not a square mod 11, so it cannot equal the square b^4, ruling out c>=1, and c=0 forces a=b=0."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 12860,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Computes 20^a mod 11 in {1,3,4,5,9} and fourth powers mod 11 in {0,1,3,4,5,9} (both correct), so b^4 = -20^a is impossible for c>=1, and correctly derives a=b=0 when c=0."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 18335,
+     "category": "Correct",
+     "score": 7,
+     "reason": "For c>=1 it reduces mod 11 and uses 20 = 3^2 (mod 11) to show b^4 = -20^a would make -1 a quadratic residue mod 11, which it is not, then correctly solves c=0 to get the unique solution (0,0,0) with verification."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 11760,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete: for c>=1, -20^a mod 11 lies in {10,2,7,8,6} and fourth powers mod 11 lie in {0,1,3,4,5,9} (both computations check out), which is a contradiction, and c=0 forces a=b=0."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 13991,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid mod 11 argument: 20^a is a nonzero square since 20 = 3^2 (mod 11), so -20^a is a non-residue while b^4 is a square, ruling out c>=1, and c=0 forces a=b=0; the only flaw is a harmless '=' written for a congruence."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 13316,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete: for c>=1, b^4 = -3^(2a) (mod 11) would make -1 a quadratic residue mod 11, contradicting the explicit list {1,3,4,5,9}, and c=0 correctly forces a=b=0."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 17038,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Proves the lemma that x^2+y^2 = 0 (mod 11) forces 11 | x and 11 | y, applies it to x=3^a, y=b^2 to exclude c>=1, then handles c=0 correctly and verifies (0,0,0)."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 12441,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete and verified: for c>=1 the residues of -20^a mod 11 cycle through {10,2,7,8,6} while fourth powers mod 11 lie in {0,1,3,4,5,9}, so the sets are disjoint, and c=0 correctly forces a=b=0."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 12950,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid mod 11 argument: 20^a is a nonzero quadratic residue and -1 is not, so -20^a cannot equal the square b^4, excluding c>=1, and c=0 forces a=b=0 with the solution verified."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 6739,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Rewrites the mod 11 equation as (3^a)^2+(b^2)^2 = 0 and uses that -1 is a non-residue mod 11 to force 11 | 3^a, a contradiction, then correctly solves c=0, giving a complete and rigorous proof."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 25809,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct but roundabout: mod 8, 5 and 3 checks (all valid, despite a harmless typo) show a and c are even, then reducing X^2+Y^2=Z^2 to coprime A,B with 11|C would make -1 a square mod 11, which a Fermat argument rules out; c=0 gives (0,0,0)."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 16955,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct but roundabout: a=0 is excluded by mod 4, then for a>=1 mod 5 gives c even and mod 3 gives a even, and (b^2/20^m)^2 = -1 (mod 11) is impossible; every step is valid."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Solves c=0 to get (0,0,0), and for c>=1 divides by (3^a)^2 mod 11 to make -1 a quadratic residue mod 11, a contradiction, giving a complete and rigorous proof.",
+   "status": "accepted",
+   "best": "P1",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 409912,
+   "calls": 52
+  }
+ },
+ {
+  "id": "PB-Basic-025",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    6
+   ],
+   "mean_score": 6.938,
+   "correct_share": 0.9375,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 41007,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Trigonometric coordinates using the standard facts I = (s-a, r) and r/R = cos A + cos B + cos C - 1 give explicit OI and MN, and the dot product correctly reduces to sin(A+B) - sin C = 0, so gamma/2 = 45 degrees."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 14303,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Vector computation from X correctly shows d.o = d.i = (b-c)(b+c-a)/2 using incenter barycentrics and the law of cosines, so MN is perpendicular to OI and gamma/2 = 45 degrees."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 29247,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Trig-coordinate bash with Y=(0,0), Z=(1,0) correctly gets MN=(d_x,d_y), OI=(u/2, -d_x/(2 sin A)) with d_y=u sin A (all stated identities, incl. I_x=(1+c-b)/2 and r-(1/2)cot A=-d_x/(2 sin A), verify), so MN.OI=0 and gamma/2=45 degrees."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 13007,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Vector proof with X at origin correctly reduces (o-i).MN to (b-c)((b+c-a)/2-T/s) and uses T/s=(b+c-a)/2 to get zero, a complete and rigorous proof that OI is perpendicular to MN."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 20712,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Clean vector argument showing I.u = I.v = s-a and O.u = c/2, O.v = b/2, hence MN.OI = qp/2 - pq/2 = 0, a complete and correct proof that gamma/2 = 45 degrees."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 30902,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Trig-coordinate proof with MN=(1-2pC,2pV) and OI=(V/(2q),-(1-2pC)/(4pq)); the incenter coordinates are stated tersely but are correct (I_x=(1+c-b)/2, I_y=r), and the dot product vanishes, so gamma/2=45 degrees."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 28694,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Cartesian computation with YZ=1 is fully correct (w_x=(c-b)/2, the factorization (1+c-b)(c-u), and 2(c+u)=S(1+c-b) all check), proving MN.OI=0 and hence gamma/2=45 degrees."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 32975,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Half-angle coordinate bash: the briefly stated identities xi=sin(s-q)/(2cos p), eta=-D_x/(2 sin 2p) and D_y=2 sin 2p xi are all correct on checking, so MN.(I-O)=0 and gamma/2=45 degrees."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 35702,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Vector computation from Y with YZ = 1 correctly establishes 2 MN.i = (c+1-b)(alpha c + beta) = alpha c^2 + beta = 2 MN.o via verified factorizations, so MN is perpendicular to OI and gamma/2 = 45 degrees; only trivial substitutions are left implicit."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 21234,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Unit-vector setup with I = (bc/p)(u+v), O.u = c/2, O.v = b/2 correctly reduces MN.OI to [(b-c)(b+c-a) - b(b-a) + c(c-a)]/2 = 0, proving MN is perpendicular to OI and gamma/2 = 45 degrees."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 34509,
+     "category": "Correct",
+     "score": 7,
+     "reason": "With YZ on the x-axis, MN = a(S,T) and, using I_x = s-b and r = R(cos alpha + cos beta + cos delta - 1), OI = R(T,-S) is a normal to MN, a correct and complete proof that gamma/2 = 45 degrees."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 16156,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Vector proof with Y at origin shows O.E=I.E=(ac/2)(c-a)(a+c-b) for the direction E=a(c-b)x+c(b-a)z of MN, all computations verified, so OI is perpendicular to MN and gamma/2=45 degrees."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 15698,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Coordinates along the bisector of angle X give MN, O and I = (d,0) with d cos(theta) = s-a, and MN.OI is correctly shown to vanish, giving gamma/2 = 45 degrees (the 'OA=OB=OC' typo is harmless)."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 15077,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Clean vector proof with X at origin: W=I-O satisfies W.y=c(b-a)/2 and W.z=b(c-a)/2 (verified), so W.MN=(b-a)(c-a)/2-(b-a)(c-a)/2=0, giving OI perpendicular to MN and gamma/2=45 degrees."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 19991,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete vector computation from X (incenter barycentrics, o.y = c^2/2, o.z = b^2/2, law of cosines) correctly shows v.i = v.o = (b-c)(b+c-a)/2, so MN is perpendicular to OI and gamma/2 = 45 degrees."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 39315,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Correct coordinate setup and correct conclusion, but the crucial simplification of OI to ((c-b)/2, -A/(2v)) is only asserted as a 'direct simplification' with no computation shown (it does check out), a minor gap in the key step."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "With X at the origin and the bisector as x-axis, M, N, O=((b+c)/(4q),(b-c)/(4s)) and I=(2bcq/p,0) are computed correctly and MN.(O-I)=Delta((S-a)/2-qd)=0 via S^2-a^2=4bcq^2, a complete rigorous proof of perpendicularity.",
+   "status": "accepted",
+   "best": "P3",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 679297,
+   "calls": 65
+  }
+ },
+ {
+  "id": "PB-Basic-026",
+  "single_call": {
+   "scores": [
+    7,
+    0,
+    4,
+    4,
+    5,
+    7,
+    7,
+    7,
+    6,
+    7,
+    7,
+    7,
+    5,
+    0,
+    7,
+    7
+   ],
+   "mean_score": 5.438,
+   "correct_share": 0.5625,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 85592,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct complex proof: shows that O is a real multiple of d+e+f, so the intouch centroid G lies on OI, and explicitly verifies that the second intersection of line D'G with the incircle is the tangency point X, giving concurrency at G by symmetry."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 93353,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Only X, D' and the equation of D'X are computed correctly; concurrency is claimed through an ill-defined determinant asserted to vanish, the OI condition is merely asserted, and no concurrency point (such as the centroid of DEF) is ever identified."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 92852,
+     "category": "Partial",
+     "score": 4,
+     "reason": "Correctly verifies that D'X passes through P_0 = (4L/(3T))O on OI for side BC, but then claims concurrency by cyclic symmetry even though P_0 is built from parameters specific to that side; it never shows, or even notes the need to show, that 4(1+mn)/(3(1+m^2)(1+n^2)) is symmetric."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 81723,
+     "category": "Partial",
+     "score": 4,
+     "reason": "Correctly computes D', X_a, the line D'X_a and O, and verifies that D'X_a passes through P = 4(1+m)/(3M)*O on OI, but concurrency is waved through as cyclic symmetry: it never shows that the side-dependent factor 4(1+m)/(3M) is the same for all three sides, which needs the tangent-length relation, so concurrency is not actually proved."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 88039,
+     "category": "Almost",
+     "score": 5,
+     "reason": "Every one-side computation is correct (X_a, D', the line D'X_a, and the intersection P = -(4(s-1)/(3M))O with OI), but the crucial claim that mu = 4(uv-1)/(3(1+u^2)(1+v^2)) is symmetric in the three tangent lengths is only asserted, without stating or using the relation between the tangent lengths."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 71498,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete coordinate proof that derives D', X (via the tangent-circle equation) and O, then explicitly verifies that T=-(4/(3K))O, with K=xy+yz+zx-1 symmetric in the tangent lengths (T is the centroid of DEF), lies on D'X, so T is on OI and the cyclic step is valid."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 78627,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct coordinate proof: D', X_a, the line D'X_a and O are correct, the key identity u(2p+1)+(q^2-p^2-p)/2 = -3((p+1)^2+q^2)/(4(p-1)) checks out, and lambda = -4/(3(xy+yz+zx-1)) is shown to be symmetric using x+y+z = xyz, so all three lines pass through lambda*O on OI."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 96257,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complex-coordinate proof with correct (verified) formulas for O, the intouch centroid G, D'=ef and the tangency point x, showing G is a real multiple of O and lies on chord D'X by an immediate check, with the symmetric centroid giving concurrency; only routine computations are left unshown."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 89122,
+     "category": "Almost",
+     "score": 6,
+     "reason": "All stated coordinates (o, R, x, d') and the key identity o+d'x*conj(o)=-3R(d'+x) are correct and P=-o/(3R) is intrinsically defined so the cyclic step is valid, but the decisive identity is only asserted (all terms cancel) with no computation shown, on top of every coordinate being asserted."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 96719,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct complex proof: D'=ef, a correct (verified) tangency-point formula, an explicit check that the centroid lies on D'X, and a correct circumcenter formula showing O is a real multiple of 1+e+f, so the symmetric centroid lies on OI."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 75120,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct coordinate proof: X (via Vieta), D', the line D'X, and its intersection P = (4rho/(3L))O with OI are all correct, and 4rho/(3L) = -(4/3)sin(A/2)sin(B/2)sin(C/2) is shown to be symmetric, so the three lines concur at one point of OI."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 80744,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct coordinate proof: D'=T(q/r) and X=T(p/q) are justified (reflection slope, Vieta on x=1), the centroid G is shown explicitly to satisfy the chord equation of D'X and to be a real multiple of O, and since G is symmetric the cyclic step is valid."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 93260,
+     "category": "Almost",
+     "score": 5,
+     "reason": "All computations (O, D', X, line D'X, and P0 lying on D'X and OI) are correct, but concurrency rests on the unjustified claim that the frame-specific point P0 is the same for all three lines by symmetry in the parameters 0,b,c; P0 is never identified as a symmetric point (it is in fact the centroid of DEF)."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 124200,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "N_a, O and R are stated without derivation, the sentence justifying X_a is false, and the key identity O.N_a = -2R(R-1) is wrong (the true value is -3R; p=3, q=4 gives -11.59 against -22.13), so the argument rests on a false claim and names the wrong concurrency point."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 87286,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Valid complex-coordinate proof: D'X is the polar of Q_a = w_a/s, the identity O.Q_a = -(3/4)(xy+y tau+tau x-1) checks out and is symmetric, so the three poles lie on a line perpendicular to OI and their polars meet at its pole O/sigma on OI; every stated formula is correct, though the computations are terse."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 84087,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct coordinates for D', X and O, with an explicit verification that (D+E+F)/3 lies on D'X and is collinear with O and I; the point is symmetric in D,E,F, so the cyclic argument is valid."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Correct coordinate proof: D', X_a, the line D'X_a, O, and its intersection lambda*O with OI, lambda = -4(pq-1)/(3(1+p^2)(1+q^2)), are all correct, and lambda is explicitly shown to be symmetric using pqr = p+q+r, so all three lines pass through one point of OI.",
+   "status": "accepted",
+   "best": "P2",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 1065604,
+   "calls": 54
+  }
+ },
+ {
+  "id": "PB-Basic-027",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    6,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 6.938,
+   "correct_share": 0.9375,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 34513,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete coordinate proof with C at the origin and AC as the x-axis: the circumcenter conditions give px - qy = R/2 and, via the verified identity R(xv+yu) - sxy = uvR, pu = R/2, so XO.DE = pu - (px - qy) = 0."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 23955,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete coordinate proof with C=(0,0), E=(1,0) in which the circle coefficients, X=(1/T,p/T), O and D are all correct (verified), and (T,S).(S,-T)=0 gives the perpendicularity rigorously."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 22794,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete coordinate proof (C=(0,0), A=(1,0)) that derives ta+mb=a and tu=a from E1, E2 lying on the circle, so OX.DE=(ta+mb-tu)/2=0; all the algebra checks out."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 37061,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Rigorous coordinate proof with AC on the x-axis: T=a^2v^2/L, the bracket simplification to uL and alpha=-T/u are all correct, giving X=(T/u,0), and using beta k = T(u-h)/u the dot product XO.DE vanishes."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 39579,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete coordinate proof using the circle kappa - L/k through C, E1, E2, in which O, the factorization giving X=(-a/k,-ab/k), D, and XO parallel to (a+b,k) perpendicular to (k,-(a+b)) are all correct."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 24678,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Coordinate proof with C=(0,0), E=(0,-1); the reflections, circle coefficients u=(a-b)/s and v=(1+ab)/s, X=(-a/s,-1/s), O and D all check out, and XO is shown orthogonal to the direction (s,-(a+b)) of DE."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 31316,
+     "category": "Almost",
+     "score": 6,
+     "reason": "The approach and main computations are correct (alpha=-e/u, X=(e/u,0), gamma f = e(u-e)/u, final dot product zero), but the write-up miswrites the circumcenter as (e/u,-gamma/2) and XO as (-e/u,-gamma/2) amid leftover 'Wait... ?' scratch work before reaching the correct direction (e/u,gamma), so the verification contains minor mistakes."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 30921,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete coordinate proof with E at the origin in which the linear system, u, v, w, X=(-ac^2/d,-abc/d), D and O-X are all correct and the dot product with DE's direction vanishes."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 32464,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete coordinate proof using the pencil s*Omega - L through C, E1, E2 (non-collinearity justified), with O, X, D and the slopes s/(a+b) and -(a+b)/s all computed correctly."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 41238,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Coordinate proof with A=(1,0): writing B=A+t(E-A) gives the verified results x0=p/u and k=p(p-u)/(2qu), and XO.DE = -p(p-u)/(2u) + kq = 0; D=(u,0) is left implicit but is obvious."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 25182,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Coordinate proof with C=(0,0), E=(0,1); O=((b-a)/2q,(1+ab)/2q), X=(-a/q,1/q) and D are computed correctly, and XO, parallel to (a+b,-q), is orthogonal to DE, parallel to (q,a+b)."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 37664,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete vector proof with C at the origin that derives mu=-s/m from E1, E2 lying on the circle, gets X=-mu*a and D=(m/alpha)a, and obtains XO.DE=-(s+mu*m)/2=0, with every step correct."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 38479,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete coordinate proof (A=(0,0), C=(1,0)) that derives t*R^2 = beta*pq/L and beta*q = K(t-1) from E1, E2 lying on the circle, giving slope(XO) = K/q against slope(DE) = -q/K; every step checks out and the nondegeneracy conditions (p>0, K>0, t!=1) hold."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 30256,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Coordinate proof with C=(0,0), A=(1,0): lambda=-v^2/(uR) and mu=-vH/(uR) are derived correctly, the identity lambda H = mu v gives (lambda,-mu) orthogonal to DE=(mH/R,mv/R), and XO is parallel to (lambda,-mu)."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 32800,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Coordinate proof with E at the origin and C=(0,1); the reflections, circle coefficients, t_X=1/h, X, O=((b-a)/2h,(3h-2)/2h) and D are all verified, and XO=((a+b)/2h,1/2) is orthogonal to DE's direction (-h,a+b)."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 19926,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete coordinate proof with C at the origin and AB horizontal in which the circle coefficients, X=(-a/k,-1/k), O and D are all correct and the direction vectors (a+b,k) and (k,-(a+b)) are orthogonal."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Complete coordinate proof with C at the origin and E=(0,-1) in which the circle coefficients, X, O and D are correct and XO=(1/(2k))(a+b,k) is orthogonal to DE's direction (k,-(a+b)).",
+   "status": "accepted",
+   "best": "P6",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 716049,
+   "calls": 68
+  }
+ },
+ {
+  "id": "PB-Basic-028",
+  "single_call": {
+   "scores": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "mean_score": 7.0,
+   "correct_share": 1.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 58263,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Clean and complete oblique-coordinate proof: the external tangency condition reduces to (t-rho)(t-L/2)=0 with rho=bc cosA/(a+b+c), and the incenter formula gives I'=X+Y, so all four sides equal rho."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 43273,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct coordinate proof: AI' from the inradius, correct nine-point center/radius/power, explicit verification that t0=bcu/(pT) solves the tangency equation (that it is the smaller root, the other being T/(2p), is immediate), and diagonals that bisect each other perpendicularly."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 52994,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct coordinate proof: power of A, nine-point center via chord bisectors, tangency quadratic with roots bcm/(2 sigma k) and sigma/k (verified via bc k^2 = sigma(sigma-a)), AI'=2dk^2 from the inradius of AEF, and a parallelogram with equal sides."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 61466,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct nine-point circle data (apart from a mislabeled point list that does not affect the formulas), a correct quadratic with u0 verified as a root, and a correct incenter computation giving four equal sides; choosing u0 as the closer root is asserted but true (the other root is (a+b+c)/(2cos(theta)))."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 56657,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete coordinate proof: AI' from the inradius of AEF, correct nine-point center/radius/power, the tangency quadratic is explicitly factored as (l-t)(l-sigma)=0 with all identities shown, the smaller root is taken, and the four sides are shown equal."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 47076,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Shows in full that d0 = k(b+c-a)/(4cos^3(theta)) satisfies the external tangency quadratic, picks it as the smaller root (asserted but true; the other root is (a+b+c)/(2cos(theta))), and AI' = 2d cos^2(theta) gives four equal sides."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 50482,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete coordinate proof: external tangency gives t^2 - T t/(4cos^2(theta)) + kmn/2 = 0, whose stated factorization (t - mnk/q)(t - q/2) is correct, the excircle root q/2 is properly excluded, and I' = X + Y with |X| = |Y| gives the rhombus."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 56871,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct coordinate proof: AI' via the similarity AEF~ABC, correct nine-point data and tangency quadratic (2), and the omitted routine checks that p0=qbc/(sqrt(k)M) is a root and that the other root M/(2sqrt(k)) is larger hold, giving AI'=2kp and four equal sides."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 48529,
+     "category": "Correct",
+     "score": 7,
+     "reason": "The tangency quadratic is correct, and the verified identity shows d0 = bc cosA/(P cos(A/2)) is a root, the other root P/(2cos(A/2)) being larger; AI' is computed correctly from the inradius and the diagonals bisect each other at right angles."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 53025,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct coordinate proof in terms of AF, AE, EF: nine-point data and tangency equation (1) are right, u0=(P-l)/(4t^3) is indeed the smaller root (checked, other root (P+l)/(2td)), and AI'=2t*AX yields the rhombus."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 43015,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct coordinate proof: AI', the nine-point center x-coordinate and radius, the power bck/2, and the tangency quadratic with roots bck/(pT) and T/(2p) all check out, and perpendicular mutually bisecting diagonals give the rhombus; the stated y-coordinate of H is missing a factor k but is never used."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 47420,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct setup and tangency quadratic with roots bc cosA/S and S/2 (the claimed identity checks out), correctly chooses the smaller root, and AI' = 2t cos(A/2) gives diagonals that bisect each other at right angles; one intermediate line has a harmless typo."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 57869,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct coordinates, tangency equation and substitution identity (verified), identifies the other root S/(2cos(theta)) as larger, and I' = X + Y with AX = AY gives the rhombus."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 54899,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Defines X, Y so that I' = X + Y and verifies by explicit, correct algebra (power of the center equals 2Rr + r^2) that this circle is externally tangent to the nine-point circle, then identifies it with (W) the same way the reference does (the 'closer to A' step is asserted but true)."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 51813,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Correct coordinate proof: tangency quadratic correctly derived and factored with roots P*mu/(a+S) and (a+S)/2 (factorization verified), I' located via the similarity ABC to AEF, giving AX=XI'=I'Y=YA; the m/mu mix-up is a harmless typo."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 58047,
+     "category": "Correct",
+     "score": 7,
+     "reason": "Complete coordinate bash: correct incenter of AEF, nine-point data and tangency equation, explicit verification that d0=Pk/(cL) is the smaller root (other root L/(2c)), giving I'=X+Y and hence a rhombus."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Correct",
+   "score": 7,
+   "reason": "Derives the tangency quadratic correctly, justifies its factorization via P^2 - 2(b+c)P + 2(1+mu)bc = 0, takes the smaller root t = bc mu/P, computes AI' = 2t cos(theta) from the inradius, and checks that all four sides are equal.",
+   "status": "accepted",
+   "best": "P2",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 829929,
+   "calls": 60
+  }
+ },
+ {
+  "id": "PB-Basic-029",
+  "single_call": {
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2
+   ],
+   "mean_score": 0.375,
+   "correct_share": 0.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 121685,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Wrong answer n for 1<=p<=n-3 (e.g. n=4, p=1 has minimum C(3,2)=3); only the trivial cases p=0 and p=n-2 are right and the main case is a bare assertion."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 122549,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Wrong answer 2p+1 (for p=2 at least C(4,2)=6 red points are forced), with only a vague unsupported sketch."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 107706,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The claimed minimum n is wrong (the true minimum is C(p+2,2), e.g. 1 for p=0), and the duality/radial-order argument is unjustified."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 126347,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Wrong answer n-2p (e.g. for p=0 the minimum is 1, not n), with a hand-wavy, incorrect counting sketch."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 117507,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Wrong answer n-p-1 (e.g. p=n-2 gives 1 although all C(n,2) points are then red), supported only by a vague, invalid lemma sketch."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 92944,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Correct answer, but the lower bound swaps the correct dual condition for an unrelated 'number of lines below' level and invokes a false, unproved 'k-level has at least k+1 vertices' fact, and the construction uses only p+2 lines, so no valid example is given for n>p+2."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 123446,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Wrong answer n-1 for 1<=p<=n-3 (e.g. n=5, p=2 has minimum C(4,2)=6), with the lower bound merely asserted as a 'standard fact'."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 94575,
+     "category": "Partial",
+     "score": 4,
+     "reason": "Correct answer and a correct, explicitly verified parabola construction, and the leftmost-point induction lemma is valid in the one-direction (levels) model, but the projective reduction falsely claims every segment OX becomes a vertical ray in one fixed direction (the direction actually depends on which side of the chosen line through O the point lies), so the lower bound is only proved when O lies outside the convex hull of I."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 108373,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Correct answer, but the lower bound rests on an invalid 'send O to infinity, count lines below' reduction and a false level lemma (levels 0..p are not convex chains and level k need not have k+1 vertices), and the p+2 tangent lines plus far lines construction cannot work for p>=1."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 106321,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Wrong answer (n for 1<=p<=n-3, whereas e.g. n=4, p=1 admits only 3 red points), with only an unsupported sketch."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 110030,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Correct answer, but the lower-bound 'lemma' is an unproved hand-wave with wrong arithmetic (2+...+(p+2) is not C(p+2,2)), and the 'p+2 lines plus far-away lines' construction is invalid because for p>=1 a new line cannot meet each original line at a point separated from O by all the other original lines."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 99582,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Correct answer, but Lemma 1 (every other line lies in one half-plane of the nearest line) and Lemma 2 (the p+2 nearest lines form a convex polygon having all C(p+2,2) intersections as vertices, ignoring the remaining lines) are false, and the far-lines construction is impossible for p>=1."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 95168,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "States the correct value C(p+2,2), but the lower-bound lemma is just the problem restated with a hand-wavy sketch and the construction (p+2 points on a circle about O, the rest near O) is unjustified and fails (e.g. for n=4, p=1 it yields at least 4 red points), so there is no creditable progress."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 121871,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Wrong answer C(n,2)-C(n-p,2) (e.g. n=3, p=0 gives 0 instead of 1, and p=n-2 gives C(n,2)-1), justified only by an unproved 'standard fact' that is even stated as an upper bound."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 115659,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Wrong answer C(n,2)-C(n-p-1,2) for p>=1 (e.g. it gives 5 for n=4, p=1 while 3 is attainable), supported by a bogus lemma."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 90295,
+     "category": "Partial",
+     "score": 2,
+     "reason": "Correct answer C(p+2,2) with a valid, fully verified concave-chain construction, but the lower bound rests on an invalid WLOG (O below all lines only holds when O lies in an unbounded cell) and a false cited lemma v_k >= k+1 (fails e.g. for n=3, k=1), so only the answer-plus-construction partial item is earned."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Incorrect",
+   "score": 0,
+   "reason": "Wrong answer: n red points for 1<=p<=n-3 is not the minimum (e.g. n=4, p=1 admits only 3 red points), and the argument is only an unsupported sketch.",
+   "status": "accepted",
+   "best": "R2.2",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 1383855,
+   "calls": 68
+  }
+ },
+ {
+  "id": "PB-Basic-030",
+  "single_call": {
+   "scores": [
+    5,
+    6,
+    6,
+    6,
+    6,
+    6,
+    5,
+    6,
+    1,
+    6,
+    0,
+    6,
+    6,
+    6,
+    0,
+    5
+   ],
+   "mean_score": 4.75,
+   "correct_share": 0.0,
+   "samples": [
+    {
+     "agent": "A1",
+     "finish": "stop",
+     "tokens": 90843,
+     "category": "Almost",
+     "score": 5,
+     "reason": "Right approach with a correct symmetric tangency equation, but s is misdefined as √(1-γ) instead of √(1-γ^2), the key dot products are asserted rather than computed, and the case AB ∥ CD is omitted."
+    },
+    {
+     "agent": "A2",
+     "finish": "stop",
+     "tokens": 76060,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Correct vector computation showing the tangency condition L_{x,y}^2 = 4p^2q^2(1+x^2)(1+y^2) is symmetric in cotα, cotβ (one garbled line is harmless), but it assumes AB and CD intersect and omits the parallel case."
+    },
+    {
+     "agent": "A3",
+     "finish": "stop",
+     "tokens": 65403,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Correct complex-coordinate verification that Re(O1·conj O2) = Re(O3·conj O4), |O_i|^2 - R_i^2 is angle-independent and R1R2 = R3R4, so tangency transfers, but the parallel case AB ∥ CD is not handled."
+    },
+    {
+     "agent": "A4",
+     "finish": "stop",
+     "tokens": 75323,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Correct complex-coordinate proof for intersecting legs (consistent center offsets, the quantity T is symmetric in u and v, and R2 = cR3, R4 = cR1 transfer the tangency condition exactly), but the case AB parallel to CD is never considered."
+    },
+    {
+     "agent": "A5",
+     "finish": "stop",
+     "tokens": 54620,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Correct vector proof using l1/m1 = l2/m2 to get O1·O2 = O3·O4 and R1R2 = R3R4, hence tangency of W3, W4 when AB and CD intersect, but the parallel case is omitted."
+    },
+    {
+     "agent": "A6",
+     "finish": "stop",
+     "tokens": 67476,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Correct analytic proof (with P = AB∩CD) that the tangency condition 2k(p^2+r^2) - pr S(α,β) = ±pr(k-1)^2 cscα cscβ is symmetric in α and β, but the case AB ∥ CD is never considered."
+    },
+    {
+     "agent": "A7",
+     "finish": "stop",
+     "tokens": 63621,
+     "category": "Almost",
+     "score": 5,
+     "reason": "Correct dot-product and power-of-a-point approach with the right symmetric formula for O1.O2, but the normal v is said to point toward A,B while the dot products used require it to point away (two sign slips that cancel), the write-up keeps an unresolved 'wait careful' fragment, and the parallel case is omitted."
+    },
+    {
+     "agent": "A8",
+     "finish": "stop",
+     "tokens": 60177,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Correct complex-coordinate proof that |O1O2|^2-R1^2-R2^2 and |O3O4|^2-R3^2-R4^2 both equal r^2 L while R1R2 = R3R4, so tangency transfers, but the case AB ∥ CD is not addressed."
+    },
+    {
+     "agent": "A9",
+     "finish": "stop",
+     "tokens": 96404,
+     "category": "Partial",
+     "score": 1,
+     "reason": "Sets up correct oblique-coordinate circle equations, but the decisive claim that the tangency condition is symmetric is only asserted, the displayed tangency equation is off by a factor of 2 (under which the claim fails), and the parallel case is omitted."
+    },
+    {
+     "agent": "A10",
+     "finish": "stop",
+     "tokens": 81676,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Correct complex-coordinate proof using the angle bisector as axis (z4 conj(z3) = z2 conj(z1), equal powers of P, R1R2 = R3R4) for intersecting legs, but the parallel-legs case is omitted."
+    },
+    {
+     "agent": "A11",
+     "finish": "stop",
+     "tokens": 104367,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "The anti-similarity T gives T(W1) = W4 and T(W2) = r^{-2}W3, which only shows W4 is tangent to the rescaled circle r^{-2}W3; concluding that W4 is tangent to W3 is a non sequitur (no inversion is used), so the key step fails."
+    },
+    {
+     "agent": "A12",
+     "finish": "stop",
+     "tokens": 61707,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Correct analytic proof via powers of P and the alpha-beta symmetric quantity S together with R1R2 = R3R4, valid for intersecting legs, but the parallel-legs case is not considered."
+    },
+    {
+     "agent": "A13",
+     "finish": "stop",
+     "tokens": 69480,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Clean, correct complex-number proof that both pairs satisfy the same relation k(1+t^2) - 2t Re(u e^{-iθ} v) = ±2tRS, but it relies on P = AB∩CD and does not treat the case AB ∥ CD."
+    },
+    {
+     "agent": "A14",
+     "finish": "stop",
+     "tokens": 61084,
+     "category": "Almost",
+     "score": 6,
+     "reason": "Correctly shows O1·O2 = O3·O4 (via Xq = Yp from the similarity), |O_i|^2 - R_i^2 independent of the angles, and R1R2 = R3R4, transferring tangency, but only treats the case where AB and CD meet."
+    },
+    {
+     "agent": "A15",
+     "finish": "stop",
+     "tokens": 98790,
+     "category": "Incorrect",
+     "score": 0,
+     "reason": "Falsely claims a spiral similarity sends the alpha-circle through A,B to the beta-circle through C,D and then identifies W3 with W2 and W4 with W1, so there is no valid argument."
+    },
+    {
+     "agent": "A16",
+     "finish": "stop",
+     "tokens": 74909,
+     "category": "Almost",
+     "score": 5,
+     "reason": "Correct power-of-a-point and dot-product framework with a valid symmetry argument, but the displayed expression for E is miscomputed (2am^2 gamma instead of 2a^2 m gamma, and the cot-cot term is off by a factor 2), the key expansion O3.O4 = O1.O2 is only asserted, and the parallel case is omitted."
+    }
+   ]
+  },
+  "swarm": {
+   "category": "Almost",
+   "score": 6,
+   "reason": "Clean, correct complex-number proof (w3 = w and R3R4 = R1R2 carry relation (1) over to W3, W4) for intersecting legs, but the case AB parallel to CD is not considered.",
+   "status": "accepted",
+   "best": "P4",
+   "self_grades": [
+    7,
+    7,
+    7
+   ],
+   "tokens": 993590,
+   "calls": 60
+  }
+ }
+]

@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "minicpm-math"
+dynamic = ["version"]
+description = "A proof swarm harness for MiniCPM5-2B-Math: parallel provers, adversarial verifiers, brute-force checks and repair on one GPU or a laptop."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.9"
+authors = [{ name = "Caldalis" }]
+keywords = ["llm", "math", "theorem-proving", "agents", "minicpm", "reasoning", "test-time-compute"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = ["httpx>=0.24", "rich>=13.0"]
+
+[project.optional-dependencies]
+math = ["sympy>=1.12", "numpy>=1.24", "math-verify>=0.9; python_version >= '3.10'"]  # math-verify needs 3.10+
+dev = ["pytest>=7", "pytest-asyncio>=0.21", "jinja2>=3.1"]
+
+[project.scripts]
+minicpm-math = "minicpm_math.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Caldalis/MiniCPM-Math-harness"
+Issues = "https://github.com/Caldalis/MiniCPM-Math-harness/issues"
+Model = "https://huggingface.co/Caldalis/MiniCPM5-2B-Math"
+"Base model" = "https://huggingface.co/openbmb/MiniCPM5-2B"
+
+[tool.hatch.version]
+path = "src/minicpm_math/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/minicpm_math"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
