@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/assets/banner.png" alt="MiniCPM5-2B-Math：面向数学与证明的 2.5B 模型，附带一个你自己就能跑起来的证明蜂群" width="100%"/>
+
 # MiniCPM-Math Harness
 
 **一个你自己就能跑起来的"证明蜂群"。**

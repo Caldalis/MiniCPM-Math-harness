@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/assets/banner.png" alt="MiniCPM5-2B-Math: a 2.5B model for math and proofs, with a proof swarm you can run yourself" width="100%"/>
+
 # MiniCPM-Math Harness
 
 **A proof swarm you can run yourself.**
