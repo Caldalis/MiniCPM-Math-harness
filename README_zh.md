@@ -27,8 +27,7 @@ HMMT 2026 年 2 月赛得 81.8**（avg@16）；16 个样本投票后为 **100 / 
 <p align="center">
 <img src="docs/assets/prove-n5-minus-n.svg" alt="MiniCPM-Math 真实运行面板" width="860"/>
 </p>
-<p align="center"><sub>Apple M5 笔记本上的一次真实运行（llama.cpp，Q8_0，4 个 slot，<code>--profile quick</code>）：4 个 prover，
-每个候选先经过一次初筛审稿，再做暴力验算（11 项 PASS、0 项 FAIL）和确认审稿。5 分半、3.5 万 token 后证明被接受，其余检查自动取消。</sub></p>
+<p align="center"><sub>Apple M5 笔记本上的一次真实运行（llama.cpp，Q8_0，4 个 slot，<code>--profile quick</code>）</sub></p>
 
 
 ## 快速开始
@@ -100,9 +99,6 @@ flowchart LR
 - **先初筛，再验算，再确认。** 每个候选先由一个 verifier 初筛，通过后才运行 Lab 和其余 verifier。差的候选只花一次审稿的成本，不用再付验证程序和 k 次审稿的开销。
 - **用证据代替意见。** Lab 执行暴力验证程序后输出的 `PASS:` / `FAIL:` 结果会提供给后续的确认 verifier 和 refiner，公式对不对由计算说了算。
 - **如实报告。** 只有全部 verifier 都打 ≥ 6/7，才标记为 `accepted`；否则给出最佳尝试并标记为 `unverified`。
-  在 IMO-ProofBench Basic 上，28 份 accepted 证明中有 23 份被 AI 评审（Claude Opus 5.5）盲评判为正确，2 份基本正确，
-  3 份不成立。这是证据，不是保证。可以通过
-  `--verifier-base-url/--verifier-model` 接入更强的模型做审稿（小模型证明、大模型把关）。
 
 ## Python API
 

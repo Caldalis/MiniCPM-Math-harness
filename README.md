@@ -28,9 +28,7 @@ this model fails when you sample it once.
 <p align="center">
 <img src="docs/assets/prove-n5-minus-n.svg" alt="MiniCPM-Math dashboard after a real run" width="860"/>
 </p>
-<p align="center"><sub>A real run on an Apple M5 laptop (llama.cpp, Q8_0, 4 slots, <code>--profile quick</code>): four provers,
-one screening review each, a brute-force check (11 PASS, 0 FAIL) and a confirming review. Accepted after 5½ minutes
-and 35K tokens; the remaining checks were cancelled.</sub></p>
+<p align="center"><sub>A real run on an Apple M5 laptop (llama.cpp, Q8_0, 4 slots, <code>--profile quick</code>)</sub></p>
 
 ## Quickstart
 
@@ -104,9 +102,7 @@ flowchart LR
 - **Evidence over opinion.** Lab output (`PASS:` / `FAIL:` lines from an executed brute-force script) is shown to the
   confirming verifiers and to the refiners, so a disagreement about a formula is settled by computation.
 - **Honest output.** A proof is reported as `accepted` only if every verifier gave it at least 6/7. Otherwise you get
-  the best attempt, labeled `unverified`. On IMO-ProofBench Basic, 23 of the 28 accepted proofs were graded correct
-  by a blind AI grader (Claude Opus 5.5), 2 almost correct and 3 not valid. That is evidence, not a guarantee. You can
-  plug in a stronger checker with `--verifier-base-url/--verifier-model` (small prover, big verifier).
+  the best attempt, labeled `unverified`. 
 
 ## Python API
 
