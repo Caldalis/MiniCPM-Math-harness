@@ -2,16 +2,28 @@
 
 <img src="docs/assets/banner.png" alt="MiniCPM5-2B-Math: a 2.5B model for math and proofs, with a proof swarm you can run yourself" width="100%"/>
 
+<p>
+  <a href="./README.md">English</a> |
+  <a href="./README_zh.md">简体中文</a>
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white" alt="Python 3.9+"/>
+  <a href="https://huggingface.co/Caldalis/MiniCPM5-2B-Math"><img src="https://img.shields.io/badge/model-MiniCPM5--2B--Math-FFD21E?logo=huggingface&logoColor=FFD21E" alt="MiniCPM5-2B-Math on Hugging Face"/></a>
+  <a href="https://huggingface.co/Caldalis/MiniCPM5-2B-Math-GGUF"><img src="https://img.shields.io/badge/GGUF-Q4__K__M%20%7C%20Q8__0%20%7C%20BF16-FFD21E?logo=huggingface&logoColor=FFD21E" alt="GGUF: Q4_K_M, Q8_0, BF16"/></a>
+  <a href="./scripts/"><img src="https://img.shields.io/badge/OpenAI--compatible-vLLM%20%7C%20SGLang%20%7C%20llama.cpp%20%7C%20MLX-6f42c1" alt="OpenAI-compatible: vLLM, SGLang, llama.cpp, MLX"/></a>
+  <a href="https://github.com/Caldalis/MiniCPM-Math-harness/actions/workflows/tests.yml"><img src="https://img.shields.io/github/actions/workflow/status/Caldalis/MiniCPM-Math-harness/tests.yml?branch=main&label=tests&logo=githubactions&logoColor=white" alt="Tests"/></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue" alt="License: Apache-2.0"/></a>
+  <a href="https://github.com/Caldalis/MiniCPM-Math-harness/graphs/commit-activity"><img src="https://img.shields.io/github/commit-activity/m/Caldalis/MiniCPM-Math-harness" alt="Commits last month"/></a>
+  <a href="https://github.com/Caldalis/MiniCPM-Math-harness/issues"><img src="https://img.shields.io/github/issues/Caldalis/MiniCPM-Math-harness" alt="Issues"/></a>
+</p>
+
 # MiniCPM-Math Harness
 
 **A proof swarm you can run yourself.**
 
 Parallel provers, adversarial verifiers, brute-force checks and repair loops,<br/>
 built around a 2.5B math model that fits on one GPU or a laptop.
-
-[Model](https://huggingface.co/Caldalis/MiniCPM5-2B-Math) ·
-[GGUF](https://huggingface.co/Caldalis/MiniCPM5-2B-Math-GGUF) ·
-[中文](README_zh.md)
 
 </div>
 
